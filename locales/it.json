@@ -1,0 +1,236 @@
+{
+  "home": {
+    "findSomething": "TROVA QUALCOSA",
+    "perfect": "PERFETTO",
+    "make": "E FAI",
+    "some": "QUALCHE",
+    "fun": "DIVERTIMENTO",
+    "description": "Scarica l'app di incontri online più popolare da App Store o Google Store. Proviamoci"
+  },
+  "about": {
+    "hero": {
+      "title": "IL PIÙ AFFIDABILE E SICURO",
+      "description": "Lorem ipsum dolor sit amet consectetur. Purus venenatis sit egestas luctus proin amet lorem leo. Fringilla turpis id amet fermentum leo et dictum viverra. Consectetur fringilla in",
+      "primaryButton": "Inizia",
+      "secondaryButton": "Il Nostro Concetto"
+    },
+    "article": {
+      "title": "Chi siamo",
+      "subtitle": "Titolo un titolo",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "aboutUs": {
+      "title": "Chi Siamo",
+      "startingWord": "BIM",
+      "description": "(Better International Match) è un'app di incontri globale che collega single in tutto il mondo. Utilizza algoritmi di abbinamento avanzati, supporta più lingue e garantisce la sicurezza degli utenti attraverso una rigorosa verifica. Le funzionalità includono comunicazione tramite testo, voce e video, scambio culturale e pianificazione di viaggi. BIM offre sia piani gratuiti che premium, favorendo una comunità di supporto e connessioni interculturali significative.",
+      "button": "Leggi Di Più"
+    },
+    "ourConcept": {
+      "title": "Il Nostro Concetto",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam.",
+      "button": "Scopri Di Più"
+    },
+    "ourConceptDetails": {
+      "title": "Il Nostro Concetto",
+      "subtitle": "Titolo uno",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "getStarted": {
+      "title": "Inizia",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam",
+      "button": "Pre-Registrazione",
+      "appStore": "Scarica su App Store",
+      "googlePlay": "Ottienilo su Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "CONTATTO",
+      "description": "Se hai bisogno di aiuto per qualsiasi problema o se vuoi sapere di più su di noi, puoi contattarci direttamente. Siamo sempre pronti ad aiutarti."
+    },
+    "form": {
+      "title": "CONTATTACI",
+      "name": {
+        "label": "Nome",
+        "placeholder": "Il tuo nome"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Il tuo indirizzo email"
+      },
+      "message": {
+        "label": "Messaggio",
+        "placeholder": "Scrivi il tuo messaggio qui."
+      },
+      "submit": "Invia",
+      "toast": {
+        "success": {
+          "title": "Messaggio inviato con successo!",
+          "description": "Ti risponderemo presto."
+        },
+        "error": {
+          "title": "Errore",
+          "description": "Invio del messaggio fallito. Per favore riprova."
+        }
+      },
+      "validation": {
+        "name": "Il nome utente deve essere di almeno 2 caratteri.",
+        "email": "Indirizzo email non valido.",
+        "message": {
+          "required": "Il messaggio è obbligatorio.",
+          "maxLength": "Il messaggio deve avere un massimo di 250 caratteri."
+        }
+      }
+    },
+    "details": {
+      "callUs": "Chiamaci",
+      "phoneNumber": "+880 1763 27 2216",
+      "email": "Email",
+      "emailAddress": "bim.info@bim.com",
+      "location": "Località",
+      "address": "120/A, Block C, Road-3, New York, Londra"
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Informazioni Legali",
+      "description": "Dettagli legali importanti sul nostro servizio"
+    },
+    "legalNotice": {
+      "title": "Avviso Legale",
+      "description": "Questo avviso legale si applica a tutto il contenuto di questo sito web sotto il nome di dominio www.bim-dating.com (di seguito 'il Sito'). Si prega di leggere attentamente questo avviso legale prima di navigare sul Sito. Accedendo al Sito, accetti senza riserve le seguenti disposizioni."
+    },
+    "articles": [
+      {
+        "title": "L'EDITORE",
+        "description": "La pubblicazione del Sito è garantita da Bim Group SARL-S con un capitale di 10.000 euro, registrato presso il Registro del Commercio e delle Società del Lussemburgo con il numero 123456, la cui sede legale si trova in 36, route du succes, Numero di telefono 0427827257, Indirizzo email: contact@bim-dating.com. Partita IVA intracomunitaria: 737286369 Il Direttore della Pubblicazione è Houzet Vincent di seguito 'l'Editore'."
+      },
+      {
+        "title": "L'HOST",
+        "description": "L'host del Sito è la società OVH, la cui sede legale si trova in 2, rue Kellermann, 59100 Roubaix, con numero di telefono: 1007 + indirizzo email di contatto"
+      },
+      {
+        "title": "ACCESSO AL SITO",
+        "description": "Il Sito è accessibile ovunque, 7 giorni su 7, 24 ore su 24, salvo in casi di forza maggiore o interruzione programmata o meno e che possono derivare da una necessità di manutenzione. In caso di modifica, interruzione o sospensione del Sito, l'Editore non può essere ritenuto responsabile."
+      },
+      {
+        "title": "RACCOLTA DATI",
+        "description": "Il Sito garantisce che l'Utente raccolga e tratti informazioni personali nel rispetto della privacy in conformità con la legge n°78-17 del 6 gennaio 1978 relativa a computer, file e libertà. Ai sensi della legge sulla protezione dei dati, datata 6 gennaio 1978, l'Utente ha il diritto di accesso, rettifica, cancellazione e opposizione dei dati personali. L'utente esercita questo diritto: · via email all'indirizzo email contact@bim-dating.com Qualsiasi utilizzo, riproduzione, distribuzione, commercializzazione, modifica di tutto o parte del Sito, senza autorizzazione dell'Editore è vietata e può comportare azioni legali e procedimenti giudiziari come previsto in particolare dal Codice della Proprietà Intellettuale e dal Codice Civile."
+      }
+    ]
+  },
+  "news": {
+    "hero": {
+      "title": "Notizie",
+      "description": "Lorem ipsum dolor sit amet consectetur. Nulla odio interdum fames aliquam consequat elit fusce penatibus. Arcu libero magna eros augue odio est. Id morbi aenean nisl quis et molestie."
+    },
+    "article": {
+      "title": "Lorem Ipsum",
+      "subtitle": "Sottotitolo dell'articolo",
+      "description": "Questa è la descrizione completa dell'articolo Lorem Ipsum."
+    },
+    "ourConceptDetails": {
+      "title": "Il Nostro Concetto",
+      "subtitle": "Sottotitolo del concetto",
+      "description": "Questa è la descrizione completa del nostro concetto."
+    },
+    "section1": {
+      "title": "Lorem IPSUM",
+      "startingWord": "BIM",
+      "description": "(Better International Match) è un'app di incontri globale che collega single in tutto il mondo. Utilizza algoritmi di abbinamento avanzati, supporta più lingue e garantisce la sicurezza degli utenti attraverso una rigorosa verifica. Le funzionalità includono comunicazione tramite testo, voce e video, scambio culturale e pianificazione di viaggi. BIM offre sia piani gratuiti che premium, favorendo una comunità di supporto e connessioni interculturali significative.",
+      "button": "Leggi Di Più"
+    },
+    "section2": {
+      "title": "Titolo Notizie",
+      "startingWord": "BIM",
+      "description": "(Better International Match) è un'app di incontri globale che collega single in tutto il mondo. Utilizza algoritmi di abbinamento avanzati, supporta più lingue e garantisce la sicurezza degli utenti attraverso una rigorosa verifica. Le funzionalità includono comunicazione tramite testo, voce e video, scambio culturale e pianificazione di viaggi. BIM offre sia piani gratuiti che premium, favorendo una comunità di supporto e connessioni interculturali significative.",
+      "button": "Leggi Di Più"
+    }
+  },
+  "preRegister": {
+    "hero": {
+      "title": "PRE-REGISTRAZIONE",
+      "description": "Se hai bisogno di aiuto per qualsiasi problema o se vuoi sapere di più su di noi, puoi contattarci direttamente. Siamo sempre pronti ad aiutarti."
+    },
+    "content": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur. Varius blandit urna magna enim adipiscing magna quisque vitae. Vel id vel sodales venenatis nulla fermentum. Sagittis pharetra sed vitae at. At dui lacus nulla massa scelerisque interdum tellus arcu mi. Amet laoreet pulvinar mattis scelerisque amet egestas ac magna aenean."
+    },
+    "form": {
+      "title": "INFORMAZIONI BASE",
+      "name": {
+        "label": "Nome",
+        "placeholder": "Il tuo nome"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Il tuo indirizzo email"
+      },
+      "phone": {
+        "label": "Telefono",
+        "placeholder": "Il tuo numero di telefono",
+        "countryCode": {
+          "placeholder": "Seleziona un prefisso",
+          "label": "Prefissi dei paesi"
+        }
+      },
+      "dob": {
+        "label": "Data di nascita",
+        "placeholder": "Scegli una data"
+      },
+      "TOS": {
+        "label": "Cliccando su Invia, accetto i",
+        "link": "Termini e Condizioni"
+      },
+      "submit": "Invia",
+      "toast": {
+        "title": "Hai inviato i seguenti valori:"
+      },
+      "submitToast": {
+        "success": {
+          "title": "Messaggio inviato con successo!",
+          "description": "Ti risponderemo presto."
+        },
+        "error": {
+          "title": "Errore",
+          "description": "Invio del messaggio fallito. Per favore riprova."
+        }
+      },
+      "validation": {
+        "name": "Il nome utente deve essere di almeno 2 caratteri.",
+        "email": "Indirizzo email non valido.",
+        "dob": "È richiesta una data di nascita."
+      }
+    },
+    "TOS": {
+      "title": "Termini e Condizioni",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    }
+  },
+  "header": {
+    "logo": "Il Social Media degli Incontri",
+    "button": "Pre-Registrazione",
+    "MainHeader": {
+      "Home": "Home",
+      "About": "Chi Siamo",
+      "News": "Notizie",
+      "Contact": "Contatto",
+      "PreRegister": "Pre-Registrazione"
+    }
+  },
+  "footer": {
+    "legal": "Legale",
+    "privacy": "©2024 da BIM Group. Tutti i diritti riservati",
+    "followUs": "Seguici"
+  },
+  "cookies": {
+    "title": "Rispettiamo la tua privacy",
+    "description": "Utilizziamo cookie strettamente necessari per il corretto funzionamento di questa piattaforma, cookie che ci permettono di effettuare analisi delle prestazioni e statistiche di utilizzo, nonché cookie condivisi con partner per consentire l'interazione con i fornitori di contenuti.",
+    "necessary": "Cookie necessari",
+    "analytics": "Cookie analitici",
+    "thirdParty": "Cookie di terze parti per contenuti",
+    "saveChoices": "Salva scelte",
+    "acceptAll": "Accetta tutti",
+    "rejectAll": "Rifiuta tutti"
+  }
+}

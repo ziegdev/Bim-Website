@@ -1,0 +1,236 @@
+{
+  "home": {
+    "findSomething": "FIND SOMETHING",
+    "perfect": "PERFECT",
+    "make": "&MAKE",
+    "some": "SOME",
+    "fun": "FUN",
+    "description": "Download the most popular online dating mobile app from app store or google store. Let's have a try"
+  },
+  "about": {
+    "hero": {
+      "title": "MOST TRUSTED & SECURE",
+      "description": "Lorem ipsum dolor sit amet consectetur. Purus venenatis sit egestas luctus proin amet lorem leo. Fringilla turpis id amet fermentum leo et dictum viverra. Consectetur fringilla in",
+      "primaryButton": "Get Started",
+      "secondaryButton": "Our Concept"
+    },
+    "article": {
+      "title": "About Us",
+      "subtitle": "Titile one title",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "aboutUs": {
+      "title": "About Us",
+      "startingWord": "BIM",
+      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "button": "Read More"
+    },
+    "ourConcept": {
+      "title": "Our Concept",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam.",
+      "button": "Learn More"
+    },
+    "ourConceptDetails": {
+      "title": "Our Concept",
+      "subtitle": "Titile one ",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "getStarted": {
+      "title": "Get Started",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam",
+      "button": "Pre-Registration",
+      "appStore": "Download on the App Store",
+      "googlePlay": "Get it on Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "CONTACT",
+      "description": "If you need any help for any issues or if you want to know any more about us you can contact us directly us we always ready to help you."
+    },
+    "form": {
+      "title": "REACH OUT TO US",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email address"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Type your message here."
+      },
+      "submit": "Submit",
+      "toast": {
+        "success": {
+          "title": "Message sent successfully!",
+          "description": "We will get back to you soon."
+        },
+        "error": {
+          "title": "Error",
+          "description": "Failed to send message. Please try again."
+        }
+      },
+      "validation": {
+        "name": "Username must be at least 2 characters.",
+        "email": "Invalid email address.",
+        "message": {
+          "required": "Message is required.",
+          "maxLength": "Message must be at maximum 250 characters."
+        }
+      }
+    },
+    "details": {
+      "callUs": "Call Us",
+      "phoneNumber": "+880 1763 27 2216",
+      "email": "Email",
+      "emailAddress": "bim.info@bim.com",
+      "location": "Location",
+      "address": "120/A, Block C, Road-3, New York, London"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "News",
+      "description": "Lorem ipsum dolor sit amet consectetur. Nulla odio interdum fames aliquam consequat elit fusce penatibus. Arcu libero magna eros augue odio est. Id morbi aenean nisl quis et molestie."
+    },
+    "article": {
+      "title": "Lorem Ipsum",
+      "subtitle": "Article Subtitle",
+      "description": "This is the full article description for Lorem Ipsum."
+    },
+    "ourConceptDetails": {
+      "title": "Our Concept",
+      "subtitle": "Concept Subtitle",
+      "description": "This is the full description of our concept."
+    },
+    "section1": {
+      "title": "Lorem IPSUM",
+      "startingWord": "BIM",
+      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "button": "Read More"
+    },
+    "section2": {
+      "title": "News Heading",
+      "startingWord": "BIM",
+      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "button": "Read More"
+    }
+  },
+  "preRegister": {
+    "hero": {
+      "title": "PRE REGISTER",
+      "description": "If you need any help for any issues or if you want to know any more about us you can contact us directly us we always ready to help you."
+    },
+    "content": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur. Varius blandit urna magna enim adipiscing magna quisque vitae. Vel id vel sodales venenatis nulla fermentum. Sagittis pharetra sed vitae at. At dui lacus nulla massa scelerisque interdum tellus arcu mi. Amet laoreet pulvinar mattis scelerisque amet egestas ac magna aenean."
+    },
+    "form": {
+      "title": "BASIC INFORMATIONS",
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Your email address"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "Your phone number",
+        "countryCode": {
+          "placeholder": "Select a country code",
+          "label": "Country codes"
+        }
+      },
+      "dob": {
+        "label": "Date of birth",
+        "placeholder": "Pick a date"
+      },
+      "TOS": {
+        "label": "By clicking Submit I agree with",
+        "link": "Terms & Conditions"
+      },
+      "submit": "Submit",
+      "toast": {
+        "title": "You submitted the following values:"
+      },
+      "validation": {
+        "name": "Username must be at least 2 characters.",
+        "email": "Invalid email address.",
+        "dob": "A date of birth is required."
+      },
+      "submitToast": {
+        "success": {
+          "title": "Message sent successfully!",
+          "description": "We will get back to you soon."
+        },
+        "error": {
+          "title": "Error",
+          "description": "Failed to send message. Please try again."
+        }
+      }
+    },
+    "TOS": {
+      "title": "Terms & Conditions",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    }
+  },
+  "header": {
+    "logo": "The Dating Social Media",
+    "button": " Pre-Register",
+    "MainHeader": {
+      "Home": "Home",
+      "About": "About",
+      "News": "News",
+      "Contact": "Contact",
+      "PreRegister": "Pre-Register"
+    }
+  },
+  "footer": {
+    "legal": "Legal",
+    "privacy": " ©2024 by BIM Group. All rights reserved",
+    "followUs": "Follow Us"
+  },
+  "legal": {
+    "hero": {
+      "title": "Legal Information",
+      "description": "Important legal details about our service"
+    },
+    "legalNotice": {
+      "title": "Legal Notice",
+      "description": "This legal notice applies to the entire contents of this website under the domain name www.bim-dating.com (hereinafter 'the Site'). Please read this legal notice carefully before browsing the Site. By accessing the Site, you unreservedly accept the following provisions."
+    },
+    "articles": [
+      {
+        "title": "THE PUBLISHER",
+        "description": "The publishing of the Site is ensured by Bim Group SARL-S with capital of 10,000 euros, registered with Luxembourg Trade and Companies Register under number 123456 whose head office is located at 36, route du succes, Telephone number 0427827257, Email address: contact@bim-dating.com. Intracommunity VAT number: 737286369 The Publication Director is Houzet Vincent hereinafter the 'Publisher'."
+      },
+      {
+        "title": "THE HOST",
+        "description": "The Site host is the company OVH, whose head office is located at 2, rue Kellermann, 59100 Roubaix, with telephone number: 1007 + contact email address"
+      },
+      {
+        "title": "ACCESS TO THE SITE",
+        "description": "The Site is accessible anywhere, 7 days a week, 24 hours a day except in cases of force majeure or interruption scheduled or not and which may arise from a need for maintenance. In the event of modification, interruption or suspension of the Site, the Publisher cannot be held responsible."
+      },
+      {
+        "title": "DATA COLLECTION",
+        "description": "The Site ensures that the User collects and processes personal information in compliance with privacy in accordance with law n°78-17 of January 6, 1978 relating to computers, files and freedoms. Under the Data Protection Act, dated January 6, 1978, the User has a right of access, rectification, deletion and opposition of personal data. The user exercises this right: · by email to the email address contact@bim-dating.com Any use, reproduction, distribution, marketing, modification of all or part of the Site, without authorization from the Publisher is prohibited and may result in legal action and prosecution as provided in particular by the Intellectual Property Code and the Civil Code."
+      }
+    ]
+  },
+  "cookies": {
+    "title": "We respect your privacy",
+    "description": "We use cookies that are strictly necessary for the proper functioning of this platform, cookies that allow us to perform performance analysis and usage statistics, as well as cookies shared with partners to enable interaction with content providers.",
+    "necessary": "Necessary cookies",
+    "analytics": "Analytics cookies",
+    "thirdParty": "Third-party content cookies",
+    "saveChoices": "Save choices",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "home": {
+    "findSomething": "ENCUENTRA ALGO",
+    "perfect": "PERFECTO",
+    "make": "Y HAZ",
+    "some": "ALGO",
+    "fun": "DIVERTIDO",
+    "description": "Descarga la aplicación móvil de citas en línea más popular de la tienda de aplicaciones o de Google. Vamos a intentarlo"
+  },
+  "about": {
+    "hero": {
+      "title": "EL MÁS CONFIABLE Y SEGURO",
+      "description": "Lorem ipsum dolor sit amet consectetur. Purus venenatis sit egestas luctus proin amet lorem leo. Fringilla turpis id amet fermentum leo et dictum viverra. Consectetur fringilla in",
+      "primaryButton": "Empezar",
+      "secondaryButton": "Nuestro Concepto"
+    },
+    "article": {
+      "title": "Sobre nosotros",
+      "subtitle": "Título un título",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "aboutUs": {
+      "title": "Sobre Nosotros",
+      "startingWord": "BIM",
+      "description": "(Better International Match) es una aplicación de citas global que conecta solteros en todo el mundo. Utiliza algoritmos de emparejamiento avanzados, admite varios idiomas y garantiza la seguridad de los usuarios mediante una rigurosa verificación. Las funciones incluyen comunicación por texto, voz y video, intercambio cultural y planificación de viajes. BIM ofrece tanto planes gratuitos como premium, fomentando una comunidad solidaria y conexiones interculturales significativas.",
+      "button": "Leer Más"
+    },
+    "ourConcept": {
+      "title": "Nuestro Concepto",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam.",
+      "button": "Saber Más"
+    },
+    "ourConceptDetails": {
+      "title": "Nuestro Concepto",
+      "subtitle": "Título uno",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "getStarted": {
+      "title": "Empezar",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam",
+      "button": "Pre-Registro",
+      "appStore": "Descargar en App Store",
+      "googlePlay": "Obtener en Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "CONTACTO",
+      "description": "Si necesitas ayuda para cualquier problema o si quieres saber más sobre nosotros, puedes contactarnos directamente. Siempre estamos listos para ayudarte."
+    },
+    "form": {
+      "title": "CONTÁCTANOS",
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "Tu dirección de correo electrónico"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje aquí."
+      },
+      "submit": "Enviar",
+      "toast": {
+        "success": {
+          "title": "¡Mensaje enviado con éxito!",
+          "description": "Nos pondremos en contacto contigo pronto."
+        },
+        "error": {
+          "title": "Error",
+          "description": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo."
+        }
+      },
+      "validation": {
+        "name": "El nombre de usuario debe tener al menos 2 caracteres.",
+        "email": "Dirección de correo electrónico no válida.",
+        "message": {
+          "required": "El mensaje es obligatorio.",
+          "maxLength": "El mensaje debe tener un máximo de 250 caracteres."
+        }
+      }
+    },
+    "details": {
+      "callUs": "Llámanos",
+      "phoneNumber": "+880 1763 27 2216",
+      "email": "Correo Electrónico",
+      "emailAddress": "bim.info@bim.com",
+      "location": "Ubicación",
+      "address": "120/A, Block C, Road-3, Nueva York, Londres"
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Información Legal",
+      "description": "Detalles legales importantes sobre nuestro servicio"
+    },
+    "legalNotice": {
+      "title": "Aviso Legal",
+      "description": "Este aviso legal se aplica a todo el contenido de este sitio web bajo el nombre de dominio www.bim-dating.com (en adelante 'el Sitio'). Por favor, lea atentamente este aviso legal antes de navegar por el Sitio. Al acceder al Sitio, acepta sin reservas las siguientes disposiciones."
+    },
+    "articles": [
+      {
+        "title": "EL EDITOR",
+        "description": "La publicación del Sitio está asegurada por Bim Group SARL-S con un capital de 10.000 euros, registrado en el Registro de Comercio y Sociedades de Luxemburgo bajo el número 123456 cuya sede se encuentra en 36, route du succes, Número de teléfono 0427827257, Dirección de correo electrónico: contact@bim-dating.com. Número de IVA intracomunitario: 737286369 El Director de Publicación es Houzet Vincent en adelante 'el Editor'."
+      },
+      {
+        "title": "EL HOST",
+        "description": "El host del Sitio es la empresa OVH, cuya sede se encuentra en 2, rue Kellermann, 59100 Roubaix, con número de teléfono: 1007 + dirección de correo electrónico de contacto"
+      },
+      {
+        "title": "ACCESO AL SITIO",
+        "description": "El Sitio es accesible en cualquier lugar, 7 días a la semana, 24 horas al día, excepto en casos de fuerza mayor o interrupción programada o no que pueda surgir de una necesidad de mantenimiento. En caso de modificación, interrupción o suspensión del Sitio, el Editor no puede ser considerado responsable."
+      },
+      {
+        "title": "RECOGIDA DE DATOS",
+        "description": "El Sitio asegura que el Usuario recoja y procese información personal en cumplimiento con la privacidad de acuerdo con la ley n°78-17 del 6 de enero de 1978 relativa a ordenadores, archivos y libertades. Bajo la Ley de Protección de Datos, de fecha 6 de enero de 1978, el Usuario tiene derecho de acceso, rectificación, eliminación y oposición de datos personales. El usuario ejerce este derecho: · por correo electrónico a la dirección de correo electrónico contact@bim-dating.com Cualquier uso, reproducción, distribución, comercialización, modificación de todo o parte del Sitio, sin autorización del Editor está prohibido y puede resultar en acciones legales y procesamientos como se prevé en particular por el Código de Propiedad Intelectual y el Código Civil."
+      }
+    ]
+  },
+  "news": {
+    "hero": {
+      "title": "NOTICIAS",
+      "description": "Lorem ipsum dolor sit amet consectetur. Nulla odio interdum fames aliquam consequat elit fusce penatibus. Arcu libero magna eros augue odio est. Id morbi aenean nisl quis et molestie."
+    },
+    "article": {
+      "title": "Lorem Ipsum",
+      "subtitle": "Subtítulo del artículo",
+      "description": "Esta es la descripción completa del artículo Lorem Ipsum."
+    },
+    "ourConceptDetails": {
+      "title": "Nuestro Concepto",
+      "subtitle": "Subtítulo del concepto",
+      "description": "Esta es la descripción completa de nuestro concepto."
+    },
+    "section1": {
+      "title": "Lorem IPSUM",
+      "startingWord": "BIM",
+      "description": "(Better International Match) es una aplicación de citas global que conecta solteros en todo el mundo. Utiliza algoritmos de emparejamiento avanzados, admite varios idiomas y garantiza la seguridad de los usuarios mediante una rigurosa verificación. Las funciones incluyen comunicación por texto, voz y video, intercambio cultural y planificación de viajes. BIM ofrece tanto planes gratuitos como premium, fomentando una comunidad solidaria y conexiones interculturales significativas.",
+      "button": "Leer Más"
+    },
+    "section2": {
+      "title": "Titular de Noticias",
+      "startingWord": "BIM",
+      "description": "(Better International Match) es una aplicación de citas global que conecta solteros en todo el mundo. Utiliza algoritmos de emparejamiento avanzados, admite varios idiomas y garantiza la seguridad de los usuarios mediante una rigurosa verificación. Las funciones incluyen comunicación por texto, voz y video, intercambio cultural y planificación de viajes. BIM ofrece tanto planes gratuitos como premium, fomentando una comunidad solidaria y conexiones interculturales significativas.",
+      "button": "Leer Más"
+    }
+  },
+  "preRegister": {
+    "hero": {
+      "title": "PRE-REGISTRO",
+      "description": "Si necesitas ayuda para cualquier problema o si quieres saber más sobre nosotros, puedes contactarnos directamente. Siempre estamos listos para ayudarte."
+    },
+    "content": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur. Varius blandit urna magna enim adipiscing magna quisque vitae. Vel id vel sodales venenatis nulla fermentum. Sagittis pharetra sed vitae at. At dui lacus nulla massa scelerisque interdum tellus arcu mi. Amet laoreet pulvinar mattis scelerisque amet egestas ac magna aenean."
+    },
+    "form": {
+      "title": "INFORMACIÓN BÁSICA",
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "Tu dirección de correo electrónico"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "placeholder": "Tu número de teléfono",
+        "countryCode": {
+          "placeholder": "Selecciona un código de país",
+          "label": "Códigos de país"
+        }
+      },
+      "dob": {
+        "label": "Fecha de Nacimiento",
+        "placeholder": "Elige una fecha"
+      },
+      "TOS": {
+        "label": "Al hacer clic en Enviar, acepto los",
+        "link": "Términos y Condiciones"
+      },
+      "submit": "Enviar",
+      "toast": {
+        "title": "Has enviado los siguientes valores:"
+      },
+      "submitToast": {
+        "success": {
+          "title": "¡Mensaje enviado con éxito!",
+          "description": "Nos pondremos en contacto contigo pronto."
+        },
+        "error": {
+          "title": "Error",
+          "description": "No se pudo enviar el mensaje. Por favor, inténtalo de nuevo."
+        }
+      },
+      "validation": {
+        "name": "El nombre de usuario debe tener al menos 2 caracteres.",
+        "email": "Dirección de correo electrónico no válida.",
+        "dob": "Se requiere una fecha de nacimiento."
+      }
+    },
+    "TOS": {
+      "title": "Términos y Condiciones",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    }
+  },
+  "header": {
+    "logo": "La Red Social de Citas",
+    "button": "Pre-Registro",
+    "MainHeader": {
+      "Home": "Inicio",
+      "About": "Sobre Nosotros",
+      "News": "Noticias",
+      "Contact": "Contacto",
+      "PreRegister": "Pre-Registro"
+    }
+  },
+  "footer": {
+    "legal": "Legal",
+    "privacy": "©2024 por BIM Group. Todos los derechos reservados",
+    "followUs": "Síguenos"
+  },
+  "cookies": {
+    "title": "Respetamos tu privacidad",
+    "description": "Utilizamos cookies estrictamente necesarias para el correcto funcionamiento de esta plataforma, cookies que nos permiten realizar análisis de rendimiento y estadísticas de uso, así como cookies compartidas con socios para permitir la interacción con proveedores de contenido.",
+    "necessary": "Cookies necesarias",
+    "analytics": "Cookies analíticas",
+    "thirdParty": "Cookies de contenido de terceros",
+    "saveChoices": "Guardar elecciones",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Rechazar todo"
+  }
+}

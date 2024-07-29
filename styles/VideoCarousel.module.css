@@ -1,0 +1,37 @@
+.carouselWrapper {
+  padding: 2rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.indicatorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  background-color: #d5b9bb;
+  border-radius: 50%;
+  margin: 0 6px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicatorActive {
+  background-color: #5d5758;
+  transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+}

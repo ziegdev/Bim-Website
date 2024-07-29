@@ -1,0 +1,236 @@
+{
+  "home": {
+    "findSomething": "FANN EPPES",
+    "perfect": "PERFEKT",
+    "make": "AN MAACH",
+    "some": "E PAAER",
+    "fun": "SPASS",
+    "description": "Lued d'Meest populär Online-Dating-App vum App Store oder Google Store erof. Losst eis et probéieren"
+  },
+  "about": {
+    "hero": {
+      "title": "MEESCHT VERTRAUT & SÉCHER",
+      "description": "Lorem ipsum dolor sit amet consectetur. Purus venenatis sit egestas luctus proin amet lorem leo. Fringilla turpis id amet fermentum leo et dictum viverra. Consectetur fringilla in",
+      "primaryButton": "Ufänken",
+      "secondaryButton": "Eis Konzept"
+    },
+    "article": {
+      "title": "Iwwer eis",
+      "subtitle": "Titel een Titel",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "aboutUs": {
+      "title": "Iwwert Eis",
+      "startingWord": "BIM",
+      "description": "(Better International Match) ass eng global Dating-App, déi Singlen weltwäit verbënnt. Et benotzt fortgeschratt Matching Algorithmen, ënnerstëtzt méi Sproochen a suergt fir Benotzersécherheet duerch rigoréis Verifikatioun. Features enthalen Text, Stëmm a Videokommunikatioun, kulturellen Austausch a Reesplanung. BIM bitt souwuel gratis wéi och Premium Pläng un, an encouragéiert eng ënnerstëtzende Gemeinschaft a bedeitend interkulturell Verbindungen.",
+      "button": "Méi liesen"
+    },
+    "ourConcept": {
+      "title": "Eis Konzept",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam.",
+      "button": "Méi léieren"
+    },
+    "ourConceptDetails": {
+      "title": "Eist Konzept",
+      "subtitle": "Titel een",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    },
+    "getStarted": {
+      "title": "Ufänken",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam",
+      "button": "Virregistréierung",
+      "appStore": "Eroflueden op der App Store",
+      "googlePlay": "Kritt et op Google Play"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "KONTAKT",
+      "description": "Wann Dir Hëllef braucht fir all Problemer oder wann Dir méi iwwer eis wëllt wëssen, kënnt Dir eis direkt kontaktéieren. Mir si ëmmer bereet Iech ze hëllefen."
+    },
+    "form": {
+      "title": "KONTAKTÉIERT EIS",
+      "name": {
+        "label": "Numm",
+        "placeholder": "Ären Numm"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Är E-Mail-Adress"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tippt Äre Message hei."
+      },
+      "submit": "Schécken",
+      "toast": {
+        "success": {
+          "title": "Message erfollegräich geschéckt!",
+          "description": "Mir kommen geschwënn zréck bei Iech."
+        },
+        "error": {
+          "title": "Feeler",
+          "description": "Message schécken ass gescheitert. Probéiert w.e.g. nach eng Kéier."
+        }
+      },
+      "validation": {
+        "name": "Den Benotzernumm muss op d'mannst 2 Zeeche laang sinn.",
+        "email": "Ongëlteg E-Mail-Adress.",
+        "message": {
+          "required": "Message ass erfuerderlech.",
+          "maxLength": "De Message däerf maximal 250 Zeeche laang sinn."
+        }
+      }
+    },
+    "details": {
+      "callUs": "Ruft Eis Un",
+      "phoneNumber": "+880 1763 27 2216",
+      "email": "E-Mail",
+      "emailAddress": "bim.info@bim.com",
+      "location": "Standuert",
+      "address": "120/A, Block C, Road-3, New York, London"
+    }
+  },
+  "legal": {
+    "hero": {
+      "title": "Rechtlech Informatiounen",
+      "description": "Wichteg rechtlech Detailer iwwer eise Service"
+    },
+    "legalNotice": {
+      "title": "Rechtleche Hinweis",
+      "description": "Dëse rechtleche Hinweis gëllt fir den Inhalt vun dëser Websäit ënner dem Domainnumm www.bim-dating.com (hei no 'd'Säit'). Liest w.e.g. dëse rechtleche Hinweis suergfälteg ier Dir d'Säit besicht. Andeems Dir op d'Säit zougräift, akzeptéiert Dir ouni Reservatioun déi folgend Bestëmmungen."
+    },
+    "articles": [
+      {
+        "title": "DEN HERAUSGEBER",
+        "description": "D'Verëffentlechung vun der Säit gëtt vu Bim Group SARL-S mat engem Kapital vun 10.000 Euro, ageschriwwen am Handels- a Firmenregister vu Lëtzebuerg ënner der Nummer 123456, deenen hiren Haaptsëtz zu 36, route du succès ass, Telefonsnummer 0427827257, E-Mail Adress: contact@bim-dating.com. Intracommunity TVA Nummer: 737286369 De Verëffentlechungsdirekter ass Houzet Vincent hei no den 'Herausgeber'."
+      },
+      {
+        "title": "DEN HOST",
+        "description": "Den Host vun der Säit ass d'Firma OVH, deenen hiren Haaptsëtz um 2, rue Kellermann, 59100 Roubaix ass, mat Telefonsnummer: 1007 + Kontakt E-Mail Adress"
+      },
+      {
+        "title": "ZOUGRËFF OP D'SÄIT",
+        "description": "D'Säit ass iwwerall zougänglech, 7 Deeg an der Woch, 24 Stonnen den Dag ausser am Fall vu Force Majeure oder Ënnerbriechung geplangt oder net, déi aus engem Wartungsbedarf entstoe kënnen. Am Fall vun Ännerung, Ënnerbriechung oder Suspendéierung vun der Säit, kann den Herausgeber net haftbar gemaach ginn."
+      },
+      {
+        "title": "DATENSAMMLUNG",
+        "description": "D'Säit suergt dofir, datt den Benotzer perséinlech Informatioune sammelt a verschafft am Aklang mam Gesetz n°78-17 vum 6. Januar 1978 bezunn op Computer, Dateien a Fräiheeten. Am Kader vum Dateschutzgesetz vum 6. Januar 1978 huet den Benotzer e Recht op Zougang, Berichtung, Läschung an Oppositioun vu perséinlechen Donnéeën. Den Benotzer übt dëst Recht aus: · per E-Mail un d'E-Mail Adress contact@bim-dating.com All Notzung, Reproduktioun, Verdeelung, Marketing, Ännerung vum ganzen oder engem Deel vun der Säit, ouni Autorisatioun vum Herausgeber ass verbueden an kann zu rechtleche Schrëtt a Verfollegung féieren, wéi besonnesch virgesi vum Code de la propriété intellectuelle an dem Code civil."
+      }
+    ]
+  },
+  "news": {
+    "hero": {
+      "title": "Neiegkeeten",
+      "description": "Lorem ipsum dolor sit amet consectetur. Nulla odio interdum fames aliquam consequat elit fusce penatibus. Arcu libero magna eros augue odio est. Id morbi aenean nisl quis et molestie."
+    },
+    "article": {
+      "title": "Lorem Ipsum",
+      "subtitle": "Artikel Ënnertitel",
+      "description": "Dëst ass déi komplett Beschreiwung vum Lorem Ipsum Artikel."
+    },
+    "ourConceptDetails": {
+      "title": "Eist Konzept",
+      "subtitle": "Konzept Ënnertitel",
+      "description": "Dëst ass déi komplett Beschreiwung vun eisem Konzept."
+    },
+    "section1": {
+      "title": "Lorem IPSUM",
+      "startingWord": "BIM",
+      "description": "(Better International Match) ass eng global Dating-App, déi Singlen weltwäit verbënnt. Et benotzt fortgeschratt Matching Algorithmen, ënnerstëtzt méi Sproochen a suergt fir Benotzersécherheet duerch rigoréis Verifikatioun. Features enthalen Text, Stëmm a Videokommunikatioun, kulturellen Austausch a Reesplanung. BIM bitt souwuel gratis wéi och Premium Pläng un, an encouragéiert eng ënnerstëtzende Gemeinschaft a bedeitend interkulturell Verbindungen.",
+      "button": "Méi liesen"
+    },
+    "section2": {
+      "title": "Neiegkeeten Rubrik",
+      "startingWord": "BIM",
+      "description": "(Better International Match) ass eng global Dating-App, déi Singlen weltwäit verbënnt. Et benotzt fortgeschratt Matching Algorithmen, ënnerstëtzt méi Sproochen a suergt fir Benotzersécherheet duerch rigoréis Verifikatioun. Features enthalen Text, Stëmm a Videokommunikatioun, kulturellen Austausch a Reesplanung. BIM bitt souwuel gratis wéi och Premium Pläng un, an encouragéiert eng ënnerstëtzende Gemeinschaft a bedeitend interkulturell Verbindungen.",
+      "button": "Méi liesen"
+    }
+  },
+  "preRegister": {
+    "hero": {
+      "title": "Virregistréieren",
+      "description": "Wann Dir Hëllef braucht fir all Problemer oder wann Dir méi iwwer eis wëllt wëssen, kënnt Dir eis direkt kontaktéieren. Mir si ëmmer bereet Iech ze hëllefen."
+    },
+    "content": {
+      "title": "Lorem ipsum",
+      "description": "Lorem ipsum dolor sit amet consectetur. Varius blandit urna magna enim adipiscing magna quisque vitae. Vel id vel sodales venenatis nulla fermentum. Sagittis pharetra sed vitae at. At dui lacus nulla massa scelerisque interdum tellus arcu mi. Amet laoreet pulvinar mattis scelerisque amet egestas ac magna aenean."
+    },
+    "form": {
+      "title": "GRONDSAACHEN",
+      "name": {
+        "label": "Numm",
+        "placeholder": "Ären Numm"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Är E-Mail-Adress"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "Är Telefonsnummer",
+        "countryCode": {
+          "placeholder": "Wielt e Lännercode",
+          "label": "Lännercodes"
+        }
+      },
+      "dob": {
+        "label": "Gebuertsdatum",
+        "placeholder": "Wielt en Datum"
+      },
+      "TOS": {
+        "label": "Andeems ech op Schécken klicken, averstanen ech mat den",
+        "link": "Allgemeng Geschäftsbedingungen"
+      },
+      "submit": "Schécken",
+      "toast": {
+        "title": "Dir hutt déi folgend Wäerter agereecht:"
+      },
+      "submitToast": {
+        "success": {
+          "title": "Message erfollegräich geschéckt!",
+          "description": "Mir kommen geschwënn zréck bei Iech."
+        },
+        "error": {
+          "title": "Feeler",
+          "description": "Message schécken ass gescheitert. Probéiert w.e.g. nach eng Kéier."
+        }
+      },
+      "validation": {
+        "name": "Den Benotzernumm muss op d'mannst 2 Zeeche laang sinn.",
+        "email": "Ongëlteg E-Mail-Adress.",
+        "dob": "En Gebuertsdatum ass erfuerderlech."
+      }
+    },
+    "TOS": {
+      "title": "Allgemeng Geschäftsbedingungen",
+      "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam suscipit cursus condimentum augue pellentesque commodo. Turpis dignissim vestibulum diam et interdum. Viverra sed et sit id amet quam egestas quis. Massa dolor posuere dui bibendum fusce. Dignissim eu amet quam."
+    }
+  },
+  "header": {
+    "logo": "Das Dating Sozial Media",
+    "button": "Virregistréieren",
+    "MainHeader": {
+      "Home": "Startseite",
+      "About": "Iwwert",
+      "News": "Neiegkeeten",
+      "Contact": "Kontakt",
+      "PreRegister": "Virregistréieren"
+    }
+  },
+  "footer": {
+    "legal": "Legal",
+    "privacy": "©2024 vum BIM Group. All Rechter reservéiert",
+    "followUs": "Follegt eis"
+  },
+  "cookies": {
+    "title": "Mir respektéieren Är Privatsphär",
+    "description": "Mir benotzen Cookien déi strikt néideg sinn fir de richtege Fonctionnement vun dëser Plattform, Cookien déi eis erlaben Leeschtungsanalysen an Notzungsstatistiken ze maachen, souwéi Cookien déi mat Partner gedeelt ginn fir Interaktioun mat Inhaltsprovider ze erméiglechen.",
+    "necessary": "Néideg Cookien",
+    "analytics": "Analysen-Cookien",
+    "thirdParty": "Drëttubidder-Inhalts-Cookien",
+    "saveChoices": "Choixen späicheren",
+    "acceptAll": "All akzeptéieren",
+    "rejectAll": "All ofwiessen"
+  }
+}
