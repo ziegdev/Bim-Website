@@ -1,5 +1,10 @@
+import { NextMiddleware } from 'next/server';
 import { stackMiddlewares } from './middlewares';
 import { withLocale } from './middlewares/with-locale';
+
+export type MiddlewareFactory = (
+  middleware: NextMiddleware,
+) => NextMiddleware;
 
 const middlewares = [withLocale];
 

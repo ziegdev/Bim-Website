@@ -66,9 +66,7 @@ function ContactUsForm() {
     },
   });
 
-  const siteKey =
-    process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ||
-    'your_fallback_site_key';
+  const siteKey = process.env.NEXT_PUBLIC_RECAPTHA_SITE_KEY;
 
   async function onSubmit(
     data: z.infer<typeof FormSchema>,

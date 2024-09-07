@@ -25,8 +25,8 @@
     "@radix-ui/react-separator": "^1.1.0",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-toast": "^1.2.1",
+    "@sohanemon/utils": "^4.0.19",
     "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "countries-list": "^3.1.0",
     "date-fns": "^3.6.0",
@@ -45,7 +45,6 @@
     "react-google-recaptcha": "^3.1.0",
     "react-hook-form": "^7.52.1",
     "react-phone-number-input": "^3.4.4",
-    "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },

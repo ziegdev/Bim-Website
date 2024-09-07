@@ -1,15 +1,11 @@
 import {
-  NextMiddleware,
   NextResponse,
   type NextFetchEvent,
   type NextRequest,
 } from 'next/server';
 
 import { defaultLocale, locales } from '@/lib/constants';
-
-export type MiddlewareFactory = (
-  middleware: NextMiddleware,
-) => NextMiddleware;
+import { MiddlewareFactory } from '@/middleware';
 
 export const withLocale: MiddlewareFactory = (next) => {
   return async (
