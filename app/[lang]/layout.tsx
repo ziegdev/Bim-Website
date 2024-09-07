@@ -1,10 +1,5 @@
 import dynamic from 'next/dynamic';
 
-const GoogleAnalytics = dynamic(
-  () => import('@/components/GoogleAnalytics'),
-  { ssr: true },
-);
-
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -17,6 +12,11 @@ import { getDictionary } from '@/lib/getDictionary';
 import { LanguageProvider } from '@/components/LanguageContext';
 import { Languages } from '@/lib/types/languages';
 import { CookieConsentDialog } from '@/components/CookieConsent';
+import { cn } from '@/lib/utils';
+import {
+  GoogleAnalytics,
+  GoogleTagManager,
+} from '@next/third-parties/google';
 // import {  GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({
@@ -46,21 +46,22 @@ export default async function RootLayout({
           href="/favico.png"
         />
       </head>
-      <body className={inter.className}>
+      <body
+        className={cn(
+          'flex min-h-screen flex-col',
+          inter.className,
+        )}
+      >
         <LanguageProvider>
           <Header />
-          {children} 
+          {children}
           {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/> */}
-          <GoogleAnalytics
-            GA_MEASUREMENT_ID={
-              process.env.NEXT_PUBLIC_GA_ID!
-            }
-          />
           <Toaster />
           <Footer />
           <CookieConsentDialog />
         </LanguageProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-5WSXZZCZ" />
     </html>
   );
 }
