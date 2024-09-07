@@ -44,7 +44,7 @@ export const withLocale: MiddlewareFactory = (next) => {
 
     // Redirect if there is no locale
     req.nextUrl.pathname = `/${locale}${pathname}`;
-    return NextResponse.rewrite(req.nextUrl, {
+    return NextResponse.redirect(req.nextUrl, {
       headers: req.headers,
     });
   };
