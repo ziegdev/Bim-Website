@@ -17,16 +17,15 @@ import {
   GoogleAnalytics,
   GoogleTagManager,
 } from '@next/third-parties/google';
+import { siteConfig } from '@/lib/site';
 // import {  GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'BIM - The dating social media',
-  description: 'Created by BIM',
-};
+export const metadata = siteConfig.metadata;
+export const viewport = siteConfig.viewport;
 
 export default async function RootLayout({
   children,
@@ -43,7 +42,7 @@ export default async function RootLayout({
         <link
           rel="icon"
           type="image/jpg"
-          href="/favico.png"
+          href="/favicon.png"
         />
       </head>
       <body

@@ -1,7 +1,9 @@
 {
-  "name": "bim-web",
+  "name": "bim-next",
   "version": "0.2.0",
   "private": true,
+  "icon": "favicon.png",
+  "description": "Created by BIM",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
