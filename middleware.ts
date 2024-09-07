@@ -7,6 +7,6 @@ export default stackMiddlewares(middlewares);
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico|logo.png|assets|sitemap.xml|robots.txt).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|logo.png|videos|assets|sitemap.xml|robots.txt).*)',
   ],
 };

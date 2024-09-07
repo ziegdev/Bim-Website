@@ -61,5 +61,23 @@ export default function Home() {
 
   const imageSize = getImageSize();
 
-  return <div className="flex-1"></div>;
+  return (
+    <div className="flex-1">
+      <video
+        className="mx-auto object-cover"
+        width="3096"
+        height="1600"
+        autoPlay
+        muted
+        loop
+        preload="auto"
+      >
+        <source
+          src="/videos/intro-lg.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  );
 }

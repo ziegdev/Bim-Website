@@ -21,8 +21,8 @@ export const withLocale: MiddlewareFactory = (next) => {
     const _locale =
       req.headers
         .get('accept-language')
-        ?.split(',')?.[0]
-        .split('-')[0] || defaultLocale;
+        ?.split('-')
+        .shift() || defaultLocale;
 
     const locale = (locales as unknown as string).includes(
       _locale,
