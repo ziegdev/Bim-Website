@@ -96,15 +96,21 @@ export function MainHeader({
               variant={'link'}
               className={`${
                 route.active
-                  ? 'underline decoration-white underline-offset-18'
+                  ? 'decoration-white underline-offset-18 max-lg:underline'
                   : ''
-              } w-full justify-start`}
+              } w-full justify-start lg:!no-underline`}
             >
               <Typography
                 variant="Bim4Regular"
-                className="ms-2 text-white"
+                className="relative ms-2 text-white"
               >
                 {route.label}
+                {route.active && (
+                  <motion.span
+                    className="absolute inset-x-0 -bottom-1/2 h-px bg-background"
+                    layoutId="nav"
+                  />
+                )}
               </Typography>
             </Button>
           </motion.div>

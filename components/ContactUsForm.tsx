@@ -201,10 +201,10 @@ function ContactUsForm() {
             </FormItem>
           )}
         />
-
         <ReCAPTCHA
           ref={recaptchaRef}
           sitekey={siteKey}
+          type="image"
           onChange={(value) => {
             setRecaptchaValue(value);
             form.setValue('recaptcha', value || '');
