@@ -61,6 +61,7 @@ export default async function RootLayout({
         </LanguageProvider>
       </body>
       <GoogleTagManager gtmId="GTM-5WSXZZCZ" />
+      <GoogleAnalytics gaId="G-FV2L6T1HW5" />
     </html>
   );
 }
