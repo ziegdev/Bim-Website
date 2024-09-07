@@ -1,32 +1,12 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { stackMiddlewares } from './middlewares';
+import { withLocale } from './middlewares/with-locale';
 
-export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+const middlewares = [withLocale];
 
-  const pathnameIsMissingLocale = [
-    'en',
-    'fr',
-    'lb',
-    'it',
-    'es',
-    'de',
-  ].every(
-    (locale) =>
-      !pathname.startsWith(`/${locale}/`) &&
-      pathname !== `/${locale}`,
-  );
-
-  if (pathnameIsMissingLocale) {
-    const locale = 'en';
-    return NextResponse.redirect(
-      new URL(`/${locale}`, request.url),
-    );
-  }
-}
+export default stackMiddlewares(middlewares);
 
 export const config = {
   matcher: [
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|logo.png|assets|sitemap.xml|robots.txt).*)',
   ],
 };
