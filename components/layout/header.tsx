@@ -5,7 +5,6 @@ import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { useParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
 
 import { MainHeader } from '../MainHeader';
 import { Button } from '../ui/button';
@@ -69,14 +68,21 @@ export function Header() {
               onClick={handleLogoClick}
               className="flex items-center gap-3"
             >
-              <Image
-                src={logoIcon}
-                alt="Logo"
-                width={30}
-                height={30}
-                className="h-auto w-[30px] lg:w-[45px]"
-                loading="lazy"
-              />
+              <motion.div
+                animate={{
+                  scale: [0.8, 1.2, 1],
+                  rotate: [30, -30, 15, 0],
+                }}
+              >
+                <Image
+                  src={logoIcon}
+                  alt="Logo"
+                  width={30}
+                  height={30}
+                  className="h-auto w-[30px] lg:w-[45px]"
+                  loading="lazy"
+                />
+              </motion.div>
               <span className="min-w-48 text-xs text-white sm:text-base">
                 The Dating Social Media
               </span>

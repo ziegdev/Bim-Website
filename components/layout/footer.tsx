@@ -101,7 +101,7 @@ export function Footer() {
       <motion.footer
         initial={{ opacity: 0 }}
         transition={{ delay: 1 }}
-        whileInView={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
         className="bg-pink"
       >
         <div className="container mx-auto p-4 sm:px-6 lg:px-8">
