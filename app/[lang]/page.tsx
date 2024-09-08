@@ -31,6 +31,11 @@ export default function Home() {
       ? '/videos/intro-md.webm'
       : '/videos/intro-sm.mp4';
 
+  const posterSrc = lg
+    ? '/videos/banner-lg.png'
+    : sm
+      ? '/videos/banner-md.png'
+      : '/videos/banner-sm.png';
   useEffect(() => {
     setTimeout(() => {
       handlePlay();
@@ -52,6 +57,7 @@ export default function Home() {
       <div className="flex-1 overflow-clip">
         <video
           onEnded={handlePause}
+          poster={posterSrc}
           ref={videoRef}
           className={cn(
             'h-[calc(100dvh-132px)] w-full object-cover max-md:h-[calc(100dvh-176px)] max-sm:h-[calc(100dvh-164px)]',
