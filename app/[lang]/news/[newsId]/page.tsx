@@ -17,15 +17,18 @@ export default function page() {
 
   if (params.newsId === 'lorem-ipsum') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-10">
         <HeroSection
           title={dict.news.article.title}
           description={dict.news.article.subtitle}
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
-        <div className="mt-8 justify-center text-center">
-          {dict.news.article.description}
+        <div className="container mt-8 max-w-4xl justify-center text-center">
+          <span className="font-bold text-pink">
+            {dict.news.section1.startingWord}
+          </span>{' '}
+          {dict.news.section1.description}
         </div>
       </div>
     );
@@ -33,15 +36,18 @@ export default function page() {
 
   if (params.newsId === 'news-heading') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-10">
         <HeroSection
-          title={dict.news.ourConceptDetails.title}
-          description={dict.news.ourConceptDetails.subtitle}
+          title={dict.news.section2.title}
+          description={''}
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
-        <div className="mt-8 justify-center text-center">
-          {dict.news.ourConceptDetails.description}
+        <div className="container mt-8 max-w-4xl justify-center text-center">
+          <span className="font-bold text-pink">
+            {dict.news.section2.startingWord}
+          </span>{' '}
+          {dict.news.section2.description}
         </div>
       </div>
     );

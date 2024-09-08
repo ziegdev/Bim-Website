@@ -1,10 +1,5 @@
 import dynamic from 'next/dynamic';
 
-const GoogleAnalytics = dynamic(
-  () => import('@/components/GoogleAnalytics'),
-  { ssr: true },
-);
-
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -17,16 +12,20 @@ import { getDictionary } from '@/lib/getDictionary';
 import { LanguageProvider } from '@/components/LanguageContext';
 import { Languages } from '@/lib/types/languages';
 import { CookieConsentDialog } from '@/components/CookieConsent';
+import { cn } from '@/lib/utils';
+import {
+  GoogleAnalytics,
+  GoogleTagManager,
+} from '@next/third-parties/google';
+import { siteConfig } from '@/lib/site';
 // import {  GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'BIM - The dating social media',
-  description: 'Created by BIM',
-};
+export const metadata = siteConfig.metadata;
+export const viewport = siteConfig.viewport;
 
 export default async function RootLayout({
   children,
@@ -43,24 +42,26 @@ export default async function RootLayout({
         <link
           rel="icon"
           type="image/jpg"
-          href="/favico.png"
+          href="/favicon.png"
         />
       </head>
-      <body className={inter.className}>
+      <body
+        className={cn(
+          'flex min-h-screen flex-col',
+          inter.className,
+        )}
+      >
         <LanguageProvider>
           <Header />
-          {children} 
+          {children}
           {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/> */}
-          <GoogleAnalytics
-            GA_MEASUREMENT_ID={
-              process.env.NEXT_PUBLIC_GA_ID!
-            }
-          />
           <Toaster />
           <Footer />
           <CookieConsentDialog />
         </LanguageProvider>
       </body>
+      <GoogleTagManager gtmId="GTM-5WSXZZCZ" />
+      <GoogleAnalytics gaId="G-FV2L6T1HW5" />
     </html>
   );
 }

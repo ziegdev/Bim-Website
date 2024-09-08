@@ -8,10 +8,10 @@ import instagramIcon from '../../public/icons/insta.svg';
 import tiktokIcon from '../../public/icons/tiktok.svg';
 import youtubeIcon from '../../public/icons/youtube.svg';
 import twitterIcon from '../../public/icons/x.svg';
-import { useRouter } from 'next/router';
 import { useParams } from 'next/navigation';
 import { Languages } from '@/lib/types/languages';
 import { useDictionary } from '@/hooks/useDictionary';
+import { motion } from 'framer-motion';
 
 type SocialIcon = {
   href: string;
@@ -98,12 +98,17 @@ export function Footer() {
   }
   return (
     <>
-      <div className="bg-pink">
+      <motion.footer
+        initial={{ opacity: 0 }}
+        transition={{ delay: 1 }}
+        animate={{ opacity: 1 }}
+        className="bg-pink"
+      >
         <div className="container mx-auto p-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-12">
             <div className="order-2 col-span-7 flex justify-center gap-4 md:order-1 md:justify-start">
               <Typography
-                className="text-start text-sm text-white sm:text-lg md:text-start"
+                className="whitespace-nowrap text-start text-sm text-white sm:text-lg md:text-start"
                 variant="Bim4Regular"
               >
                 {' '}
@@ -138,7 +143,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.footer>
     </>
   );
 }
