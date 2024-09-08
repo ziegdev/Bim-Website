@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import {
   useMediaQuery,
@@ -13,6 +14,8 @@ import {
   useRef,
   useState,
 } from 'react';
+import appSroteImage from '../../public/images/apple-play-store-icon.png';
+import googlePlayImage from '../../public/images/google-play-store-icon.png';
 
 export default function Home() {
   const isReady = useIsClient();
@@ -46,7 +49,7 @@ export default function Home() {
 
   if (isReady)
     return (
-      <div className="flex-1">
+      <div className="flex-1 overflow-clip">
         <video
           onEnded={handlePause}
           ref={videoRef}
@@ -70,11 +73,57 @@ export default function Home() {
               transition={{ duration: 0.3 }}
               onClick={handlePlay}
               className={cn(
-                'animate-out:animate-ping absolute inset-0 z-50 m-auto grid place-content-center rounded-full bg-pink text-background lg:size-20',
+                'animate-out:animate-ping absolute inset-0 z-50 m-auto grid size-16 place-content-center rounded-full bg-pink text-background lg:size-20',
               )}
             >
-              <Play className="size-9" />
+              <Play className="size-7 lg:size-9" />
             </motion.button>
+          )}
+        </AnimatePresence>
+        <AnimatePresence mode="wait">
+          {!playing && (
+            <motion.div
+              initial={{ y: 300, opacity: 0, scaleX: 0.8 }}
+              exit={{ y: 300, opacity: 0 }}
+              animate={{ y: 0, opacity: 1, scaleX: 1 }}
+              transition={{ duration: 0.3 }}
+              className="absolute inset-x-0 bottom-40 flex justify-center gap-6 px-4"
+            >
+              <motion.button
+                whileHover={{
+                  scale: 1.04,
+                }}
+                whileTap={{
+                  scale: 0.96,
+                }}
+                className="rounded-2xl"
+              >
+                <Image
+                  src={appSroteImage.src}
+                  alt="Download on the App Store"
+                  width={190}
+                  height={60}
+                  unoptimized
+                />
+              </motion.button>
+              <motion.button
+                whileHover={{
+                  scale: 1.04,
+                }}
+                whileTap={{
+                  scale: 0.96,
+                }}
+                className="rounded-2xl"
+              >
+                <Image
+                  src={googlePlayImage.src}
+                  alt="Get it on Google Play"
+                  width={190}
+                  height={60}
+                  unoptimized
+                />
+              </motion.button>
+            </motion.div>
           )}
         </AnimatePresence>
       </div>
