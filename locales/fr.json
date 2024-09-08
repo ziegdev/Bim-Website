@@ -39,7 +39,7 @@
       "title": "Commencer",
       "description": "Lorem ipsum dolor sit amet consectetur. Scelerisque mi varius quam facilisis etiam. Nunc id aliquam",
       "button": "Pré-Inscription",
-      "appStore": "Télécharger sur l'App Store",
+      "appStore": "Télécharger sur lApp Store",
       "googlePlay": "Disponible sur Google Play"
     }
   },
@@ -70,11 +70,11 @@
         },
         "error": {
           "title": "Erreur",
-          "description": "Échec de l'envoi du message. Veuillez réessayer."
+          "description": "Échec de lenvoi du message. Veuillez réessayer."
         }
       },
       "validation": {
-        "name": "Le nom d'utilisateur doit contenir au moins 2 caractères.",
+        "name": "Le nom dutilisateur doit contenir au moins 2 caractères.",
         "email": "Adresse email invalide.",
         "message": {
           "required": "Le message est obligatoire.",
@@ -86,7 +86,7 @@
       "callUs": "Appelez-nous",
       "phoneNumber": "+880 1763 27 2216",
       "email": "Email",
-      "emailAddress": "bim.info@bim.com",
+      "emailAddress": "contact@bim-dating.com",
       "location": "Localisation",
       "address": "120/A, Block C, Road-3, New York, Londres"
     }
@@ -98,7 +98,7 @@
     },
     "legalNotice": {
       "title": "Mentions Légales",
-      "description": "Ces mentions légales s'appliquent à l'ensemble du contenu de ce site web sous le nom de domaine www.bim-dating.com (ci-après 'le Site'). Veuillez lire attentivement ces mentions légales avant de naviguer sur le Site. En accédant au Site, vous acceptez sans réserve les dispositions suivantes."
+      "description": "Ces mentions légales sappliquent à lensemble du contenu de ce site web sous le nom de domaine www.bim-dating.com (ci-après 'le Site'). Veuillez lire attentivement ces mentions légales avant de naviguer sur le Site. En accédant au Site, vous acceptez sans réserve les dispositions suivantes."
     },
     "articles": [
       {
