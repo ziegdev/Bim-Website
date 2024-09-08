@@ -16,6 +16,7 @@ import {
 } from 'react';
 import appSroteImage from '../../public/images/apple-play-store-icon.png';
 import googlePlayImage from '../../public/images/google-play-store-icon.png';
+import Link from 'next/link';
 
 export default function Home() {
   const isReady = useIsClient();
@@ -40,6 +41,7 @@ export default function Home() {
     setTimeout(() => {
       handlePlay();
     }, 1000);
+    return () => videoRef.current?.pause();
   }, []);
 
   function handlePause() {
@@ -107,13 +109,15 @@ export default function Home() {
                 }}
                 className="rounded-2xl"
               >
-                <Image
-                  src={appSroteImage.src}
-                  alt="Download on the App Store"
-                  width={190}
-                  height={60}
-                  unoptimized
-                />
+                <Link href="/pre-register">
+                  <Image
+                    src={appSroteImage.src}
+                    alt="Download on the App Store"
+                    width={190}
+                    height={60}
+                    unoptimized
+                  />
+                </Link>
               </motion.button>
               <motion.button
                 whileHover={{
@@ -124,13 +128,15 @@ export default function Home() {
                 }}
                 className="rounded-2xl"
               >
-                <Image
-                  src={googlePlayImage.src}
-                  alt="Get it on Google Play"
-                  width={190}
-                  height={60}
-                  unoptimized
-                />
+                <Link href="/pre-register">
+                  <Image
+                    src={googlePlayImage.src}
+                    alt="Get it on Google Play"
+                    width={190}
+                    height={60}
+                    unoptimized
+                  />
+                </Link>
               </motion.button>
             </motion.div>
           )}
