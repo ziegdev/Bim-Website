@@ -39,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       handlePlay();
-    });
+    }, 1000);
   }, []);
 
   function handlePause() {
@@ -59,13 +59,16 @@ export default function Home() {
           onEnded={handlePause}
           poster={posterSrc}
           ref={videoRef}
+          playsInline
+          webkit-playsinline
           className={cn(
-            'h-[calc(100dvh-132px)] w-full object-cover max-md:h-[calc(100dvh-176px)] max-sm:h-[calc(100dvh-164px)]',
-            !playing && 'brightness-75',
+            'h-[calc(100vh-132px)] w-full object-cover max-md:h-[calc(100vh-176px)] max-sm:h-[calc(100vh-164px)]',
             'relative',
           )}
+          autoPlay
           muted
           preload="auto"
+          controls={false}
         >
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
@@ -79,7 +82,7 @@ export default function Home() {
               transition={{ duration: 0.3 }}
               onClick={handlePlay}
               className={cn(
-                'animate-out:animate-ping absolute inset-0 z-50 m-auto grid size-16 place-content-center rounded-full bg-pink text-background lg:size-20',
+                'animate-out:animate-ping absolute inset-x-0 z-50 m-auto grid size-16 place-content-center rounded-full bg-pink text-background max-lg:inset-0 lg:bottom-[150px] lg:size-20',
               )}
             >
               <Play className="size-7 lg:size-9" />
@@ -93,7 +96,7 @@ export default function Home() {
               exit={{ y: 300, opacity: 0 }}
               animate={{ y: 0, opacity: 1, scaleX: 1 }}
               transition={{ duration: 0.3 }}
-              className="absolute inset-x-0 bottom-40 flex justify-center gap-6 px-4"
+              className="absolute inset-x-0 bottom-40 flex justify-center gap-6 px-4 lg:gap-32"
             >
               <motion.button
                 whileHover={{
