@@ -13,7 +13,7 @@ export default function Home() {
   const videoSrc = lg
     ? '/videos/intro-lg.mp4'
     : sm
-      ? '/videos/intro-md.mp4'
+      ? '/videos/intro-md.webm'
       : '/videos/intro-sm.mp4';
 
   if (isReady)
