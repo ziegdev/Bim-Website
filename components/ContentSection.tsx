@@ -147,7 +147,7 @@ const ContentSection = forwardRef<
               </Typography>
               <Typography
                 variant="Bim4Regular"
-                className="mb-8 text-center text-base text-[#4b0325] sm:text-justify sm:text-lg"
+                className="mb-8 line-clamp-[12] text-center text-base text-[#4b0325] sm:text-justify sm:text-lg md:line-clamp-[7]"
               >
                 <span className="font-bold text-pink">
                   {startingWord}
