@@ -24,8 +24,11 @@ export default function page() {
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
-        <div className="mt-8 justify-center text-center">
-          {dict.news.article.description}
+        <div className="container mt-8 justify-center text-center">
+          <span className="font-bold text-pink">
+            {dict.news.section1.startingWord}
+          </span>{' '}
+          {dict.news.section1.description}
         </div>
       </div>
     );
@@ -35,13 +38,16 @@ export default function page() {
     return (
       <div className="min-h-screen">
         <HeroSection
-          title={dict.news.ourConceptDetails.title}
-          description={dict.news.ourConceptDetails.subtitle}
+          title={dict.news.section2.title}
+          description={''}
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
-        <div className="mt-8 justify-center text-center">
-          {dict.news.ourConceptDetails.description}
+        <div className="container mt-8 justify-center text-center">
+          <span className="font-bold text-pink">
+            {dict.news.section2.startingWord}
+          </span>{' '}
+          {dict.news.section2.description}
         </div>
       </div>
     );

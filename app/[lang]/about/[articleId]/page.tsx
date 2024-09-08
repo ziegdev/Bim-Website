@@ -6,11 +6,12 @@ import { useDictionary } from '@/hooks/useDictionary';
 import HeroSection from '@/components/HeroSection';
 import aboutHeroImage from '../../../../public/images/about-hero.png';
 import aboutHeroMobileImage from '../../../../public/images/about-hero-mobile.png';
+import { toCamelCase } from '@/lib/utils';
+
 export default function page() {
   const params = useParams();
   const lang = params.lang as Languages;
   const dict = useDictionary(lang);
-
   if (!dict) {
     return null;
   }
@@ -24,8 +25,11 @@ export default function page() {
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="mt-8 justify-center text-center">
-          {dict.about.article.description}
+        <div className="container mt-8 justify-center text-center">
+          <span className="font-bold text-pink">
+            {dict.about.aboutUs.startingWord}
+          </span>{' '}
+          {dict.about.aboutUs.description}
         </div>
       </div>
     );
@@ -42,7 +46,7 @@ export default function page() {
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="mt-8 justify-center text-center">
+        <div className="container mt-8 justify-center text-center">
           {dict.about.ourConceptDetails.description}
         </div>
       </div>
