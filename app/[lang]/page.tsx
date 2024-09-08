@@ -22,7 +22,7 @@ let INITIAL_LOAD = true;
 
 export default function Home() {
   const isReady = useIsClient();
-  const [playing, setPlaying] = useState(true);
+  const [playing, setPlaying] = useState(INITIAL_LOAD);
 
   const videoRef = useRef<ElementRef<'video'>>(null);
   const sm = useMediaQuery('sm');
