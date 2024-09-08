@@ -108,7 +108,7 @@ export function Footer() {
           <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-12">
             <div className="order-2 col-span-7 flex justify-center gap-4 md:order-1 md:justify-start">
               <Typography
-                className="text-start text-sm text-white sm:text-lg md:text-start"
+                className="whitespace-nowrap text-start text-sm text-white sm:text-lg md:text-start"
                 variant="Bim4Regular"
               >
                 {' '}

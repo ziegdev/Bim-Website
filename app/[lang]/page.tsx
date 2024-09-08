@@ -19,7 +19,7 @@ export default function Home() {
   if (isReady)
     return (
       <video
-        className="mx-auto size-full flex-1 object-cover"
+        className="h-[calc(100dvh-132px)] w-full flex-1 object-cover max-md:h-[calc(100dvh-176px)] max-sm:h-[calc(100dvh-164px)]"
         autoPlay
         muted
         loop
