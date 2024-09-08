@@ -6,7 +6,6 @@ import { useDictionary } from '@/hooks/useDictionary';
 import HeroSection from '@/components/HeroSection';
 import aboutHeroImage from '../../../../public/images/about-hero.png';
 import aboutHeroMobileImage from '../../../../public/images/about-hero-mobile.png';
-import { toCamelCase } from '@/lib/utils';
 
 export default function page() {
   const params = useParams();
@@ -18,14 +17,14 @@ export default function page() {
 
   if (params.articleId === 'about-us') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-10">
         <HeroSection
           title={dict.about.article.title}
           description={dict.about.article.subtitle}
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="container mt-8 justify-center text-center">
+        <div className="container mt-8 max-w-4xl justify-center text-center">
           <span className="font-bold text-pink">
             {dict.about.aboutUs.startingWord}
           </span>{' '}
@@ -37,7 +36,7 @@ export default function page() {
 
   if (params.articleId === 'our-concept') {
     return (
-      <div className="min-h-screen">
+      <div className="min-h-screen pb-10">
         <HeroSection
           title={dict.about.ourConceptDetails.title}
           description={
@@ -46,7 +45,7 @@ export default function page() {
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="container mt-8 justify-center text-center">
+        <div className="container mt-8 max-w-4xl justify-center text-center">
           {dict.about.ourConceptDetails.description}
         </div>
       </div>

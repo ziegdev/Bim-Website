@@ -18,6 +18,8 @@ import appSroteImage from '../../public/images/apple-play-store-icon.png';
 import googlePlayImage from '../../public/images/google-play-store-icon.png';
 import Link from 'next/link';
 
+let INITIAL_LOAD = true;
+
 export default function Home() {
   const isReady = useIsClient();
   const [playing, setPlaying] = useState(true);
@@ -39,9 +41,13 @@ export default function Home() {
       : '/videos/banner-sm.png';
   useEffect(() => {
     setTimeout(() => {
-      handlePlay();
+      if (INITIAL_LOAD) handlePlay();
+      INITIAL_LOAD = false;
     }, 1000);
-    return () => videoRef.current?.pause();
+    return () => {
+      videoRef.current?.pause();
+      if (!INITIAL_LOAD) setPlaying(false);
+    };
   }, []);
 
   function handlePause() {
@@ -67,7 +73,7 @@ export default function Home() {
             'h-[calc(100vh-132px)] w-full object-cover max-md:h-[calc(100vh-176px)] max-sm:h-[calc(100vh-164px)]',
             'relative',
           )}
-          autoPlay
+          autoPlay={INITIAL_LOAD}
           muted
           preload="auto"
           controls={false}
