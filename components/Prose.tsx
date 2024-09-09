@@ -3,7 +3,7 @@ import { cn } from '@sohanemon/utils';
 import { MemoizedReactMarkdown } from './Markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
-import { MarkdownImage } from './markdown-image';
+import { MarkdownImage } from './MarkdownImage';
 
 type ProseProps = React.ComponentProps<'div'>;
 
