@@ -15,13 +15,13 @@ export function Prose({
   return (
     <div
       className={cn(
-        'prose prose-invert max-w-full',
+        'container prose prose-invert max-w-3xl pt-10',
         className,
       )}
       {...props}
     >
       <MemoizedReactMarkdown
-        className="prose-invert prose-p:leading-relaxed prose-pre:p-0 break-words"
+        className="prose break-words prose-p:leading-relaxed prose-pre:p-0"
         remarkPlugins={[remarkGfm, remarkMath]}
         components={{
           img(imgProps) {
