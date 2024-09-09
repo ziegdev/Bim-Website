@@ -1,6 +1,6 @@
 import type * as React from 'react';
 import { cn } from '@sohanemon/utils';
-import { MemoizedReactMarkdown } from './markdown';
+import { MemoizedReactMarkdown } from './Markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import { MarkdownImage } from './markdown-image';
