@@ -114,8 +114,7 @@
     },
     "section2": {
       "title": "News Heading",
-      "startingWord": "BIM",
-      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "description": "# Better International Match\n\n![BIM Logo](/favicon.png)\n\n**Better International Match (BIM)** is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification.\n\nFeatures include:\n- Text, voice, and video communication\n- Cultural exchange\n- Travel planning\n\nBIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections. \n\n![Unsplash](https://plus.unsplash.com/premium_photo-1676667573156-7d14e8b79ad3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
       "button": "Read More"
     }
   },
