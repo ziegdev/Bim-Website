@@ -22,7 +22,7 @@
     "aboutUs": {
       "title": "About Us",
       "startingWord": "BIM",
-      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "description": "(Better International Match) is a global ~dating app connecting~ singles *worldwide*. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and **video communication**, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
       "button": "Read More"
     },
     "ourConcept": {
@@ -107,9 +107,9 @@
       "description": "This is the full description of our concept."
     },
     "section1": {
-      "title": "Lorem IPSUM",
+      "title": "Lorem IPSUM modified",
       "startingWord": "BIM",
-      "description": "(Better International Match) is a global dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
+      "description": "**BIM** (Better International Match) is a **global** dating app connecting singles worldwide. It uses advanced matching algorithms, supports multiple languages, and ensures user safety through rigorous verification. Features include text, voice, and video communication, cultural exchange, and travel planning. BIM offers both free and premium plans, fostering a supportive community and meaningful cross-cultural connections.",
       "button": "Read More"
     },
     "section2": {
