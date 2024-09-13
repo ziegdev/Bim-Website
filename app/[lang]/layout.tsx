@@ -60,8 +60,8 @@ export default async function RootLayout({
           <CookieConsentDialog />
         </LanguageProvider>
       </body>
-      <GoogleTagManager gtmId="GTM-5WSXZZCZ" />
-      <GoogleAnalytics gaId="G-FV2L6T1HW5" />
+      <GoogleTagManager gtmId="GTM-NMJ93GV3" />
+      <GoogleAnalytics gaId="G-LB46B1GCHH" />
     </html>
   );
 }
