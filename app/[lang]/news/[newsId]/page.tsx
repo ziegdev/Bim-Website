@@ -25,12 +25,7 @@ export default function page() {
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
-        <div className="container mt-8 max-w-4xl justify-center text-center">
-          <span className="font-bold text-pink">
-            {dict.news.section1.startingWord}
-          </span>{' '}
-          {dict.news.section1.description}
-        </div>
+        <Prose>{dict.news.section1.description}</Prose>
       </div>
     );
   }
