@@ -6,6 +6,7 @@ import { useDictionary } from '@/hooks/useDictionary';
 import HeroSection from '@/components/HeroSection';
 import aboutHeroImage from '../../../../public/images/about-hero.png';
 import aboutHeroMobileImage from '../../../../public/images/about-hero-mobile.png';
+import { Prose } from '@/components/Prose';
 
 export default function page() {
   const params = useParams();
@@ -24,12 +25,7 @@ export default function page() {
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="container mt-8 max-w-4xl justify-center text-center">
-          <span className="font-bold text-pink">
-            {dict.about.aboutUs.startingWord}
-          </span>{' '}
-          {dict.about.aboutUs.description}
-        </div>
+        <Prose>{dict.about.aboutUs.description}</Prose>
       </div>
     );
   }
@@ -45,9 +41,9 @@ export default function page() {
           backgroundImage={aboutHeroImage.src}
           backgroundImageMobile={aboutHeroMobileImage.src}
         />
-        <div className="container mt-8 max-w-4xl justify-center text-center">
+        <Prose>
           {dict.about.ourConceptDetails.description}
-        </div>
+        </Prose>
       </div>
     );
   }
