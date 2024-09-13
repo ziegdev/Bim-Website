@@ -10,6 +10,7 @@ import { motion, useInView } from 'framer-motion';
 
 import { Typography } from './Typography';
 import CustomButton from './CustomButton';
+import { Prose } from './Prose';
 
 interface ContentSectionProps {
   title: string;
@@ -145,15 +146,7 @@ const ContentSection = forwardRef<
               >
                 {title}
               </Typography>
-              <Typography
-                variant="Bim4Regular"
-                className="mb-8 line-clamp-[12] text-center text-base text-[#4b0325] sm:text-justify sm:text-lg md:line-clamp-[7]"
-              >
-                <span className="font-bold text-pink">
-                  {startingWord}
-                </span>{' '}
-                {description}
-              </Typography>
+              <Prose short>{description}</Prose>
               <div className="flex justify-start">
                 {button && idPassedToButton && (
                   <CustomButton

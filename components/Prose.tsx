@@ -5,23 +5,30 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import { MarkdownImage } from './MarkdownImage';
 
-type ProseProps = React.ComponentProps<'div'>;
+type ProseProps = React.ComponentProps<'div'> & {
+  short?: boolean;
+};
 
 export function Prose({
   className,
   children,
+  short,
   ...props
 }: ProseProps) {
   return (
     <div
       className={cn(
-        'container prose prose-invert max-w-3xl pt-10',
+        'text-[#4b0325]',
+        !short && 'container max-w-3xl pt-10',
         className,
       )}
       {...props}
     >
       <MemoizedReactMarkdown
-        className="prose break-words prose-p:leading-relaxed prose-pre:p-0"
+        className={cn(
+          "prose break-words font-['Bim4-Regular'] prose-p:leading-relaxed prose-pre:p-0",
+          short && 'line-clamp-[12] md:line-clamp-[7]',
+        )}
         remarkPlugins={[remarkGfm, remarkMath]}
         components={{
           img(imgProps) {
