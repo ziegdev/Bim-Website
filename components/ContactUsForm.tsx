@@ -49,7 +49,7 @@ function ContactUsForm() {
   const lang = params.lang as Languages;
   const dict = useDictionary(lang);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
+  const [, setIsLoading] = useState(false);
 
   const [recaptchaValue, setRecaptchaValue] = useState<
     string | null
@@ -66,8 +66,8 @@ function ContactUsForm() {
     },
   });
 
-  const siteKey = process.env
-    .NEXT_PUBLIC_RECAPTHA_SITE_KEY as string;
+  const siteKey =
+    '6LdDLzkqAAAAAIuR5mim8jc2TRVtdaFPOadJgGnK';
 
   async function onSubmit(
     data: z.infer<typeof FormSchema>,
