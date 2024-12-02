@@ -12,12 +12,12 @@ export type ContactDetailItem = {
   valueKey: keyof Dictionary['contact']['details'];
 };
 export const ContactDetails: ContactDetailItem[] = [
-  {
-    id: '1',
-    nameKey: 'callUs',
-    href: phoneContactDetails.src,
-    valueKey: 'phoneNumber',
-  },
+  // {
+  //   id: '1',
+  //   nameKey: 'callUs',
+  //   href: phoneContactDetails.src,
+  //   valueKey: 'phoneNumber',
+  // },
   {
     id: '2',
     nameKey: 'email',
