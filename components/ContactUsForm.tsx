@@ -67,7 +67,8 @@ function ContactUsForm() {
   });
 
   const siteKey =
-    '6LdDLzkqAAAAAIuR5mim8jc2TRVtdaFPOadJgGnK';
+    // '6LdDLzkqAAAAAIuR5mim8jc2TRVtdaFPOadJgGnK';
+    "6LcrJ5EqAAAAAGTb8wFK93XH3oATPq0G1liH7Bdq";
 
   async function onSubmit(
     data: z.infer<typeof FormSchema>,
