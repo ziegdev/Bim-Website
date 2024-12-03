@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 async function verifyRecaptcha(token: string) {
-  const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+  const secretKey = "6LcrJ5EqAAAAADdeE7w3S-Qszeaga51GminL1jQW"
+  // process.env.RECAPTCHA_SECRET_KEY;
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
-
   const response = await fetch(verifyUrl, {
     method: 'POST',
   });
