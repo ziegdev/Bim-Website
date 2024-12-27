@@ -20,8 +20,8 @@ export default function page() {
     return (
       <div className="min-h-screen pb-10">
         <HeroSection
-          title={dict.news.article.title}
-          description={dict.news.article.subtitle}
+          title={dict.news.section1.title}
+          description={''}
           backgroundImage={newsHero.src}
           backgroundImageMobile={newsHeroMobile.src}
         />
