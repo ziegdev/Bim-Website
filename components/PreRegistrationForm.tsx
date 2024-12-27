@@ -225,7 +225,7 @@ function PreRegistrationForm() {
           variant="Bim1"
           className="mb-8 text-center text-xl text-[#D10062] sm:text-3xl"
         >
-          {dict.preRegister.content.title}
+          {dict.preRegister.hero.title}
         </Typography>
 
         <FormField

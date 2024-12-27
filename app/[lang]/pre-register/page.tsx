@@ -72,7 +72,7 @@ export default function page() {
         />
         <div className="container relative z-10 mx-auto grid grid-cols-1 gap-12 py-8 lg:grid-cols-2 lg:gap-28 lg:py-24">
           <div>
-            <motion.div
+{/*             <motion.div
               variants={itemVariants}
               className="order-1 hidden flex-1 justify-center sm:order-2 sm:flex"
             >
@@ -81,7 +81,7 @@ export default function page() {
                 alt="image"
                 className="h-96 w-auto"
               />
-            </motion.div>
+            </motion.div> */}
             <Typography
               variant="Bim1"
               className="mb-4 mt-4 text-center text-xl text-[#4b0325] sm:mb-8 sm:mt-8 sm:text-justify sm:text-3xl"
