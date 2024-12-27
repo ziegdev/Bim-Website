@@ -147,27 +147,7 @@ export default function page() {
         />
         <div className="container relative z-10 mx-auto px-4 py-16 sm:py-24">
           <div className="mx-auto items-center px-4 sm:flex">
-            <motion.div
-              initial={{
-                scale: 0.9,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{
-                once: true,
-                amount: 0.5,
-              }}
-              transition={{
-                duration: 0.5,
-              }}
-              className="flex-1 sm:pe-20 sm:pr-8 lg:pe-28 xl:pe-40"
-            >
-              <VideoSection />
-            </motion.div>
-            <div className="mt-8 flex-1 justify-between sm:mt-0">
+          <div className="mt-8 flex-1 justify-between sm:mt-0">
               <Typography
                 variant="Bim1"
                 className="mb-4 text-center text-3xl text-[#4b0325] sm:text-start sm:text-4xl"
@@ -222,6 +202,27 @@ export default function page() {
                   />
                 </motion.button>
               </div>
+            <motion.div
+              initial={{
+                scale: 0.9,
+                opacity: 0,
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+              }}
+              viewport={{
+                once: true,
+                amount: 0.5,
+              }}
+              transition={{
+                duration: 0.5,
+              }}
+              className="flex-1 sm:pe-20 sm:pr-8 lg:pe-28 xl:pe-40"
+            >
+              <VideoSection />
+            </motion.div>
+
             </div>
           </div>
         </div>
