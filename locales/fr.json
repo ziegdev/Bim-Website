@@ -150,11 +150,11 @@
   "preRegister": {
     "hero": {
       "title": "PRÉ-INSCRIPTION",
-      "description": "Deviens un des 1000 premiers inscrits de la communauté BIM et reçoit un abonnement de 3 mois gratuit. Pour ce faire rien de plus simple remplis le formulaire ci-dessous."
+      "description": "Soyez parmi les premiers à découvrir l'expérience BIM en remplissant le formulaire de pré-inscription.  En vous préinscrivant, vous bénéficierez d'un accès exclusif à notre application dès son lancement. Ne manquez pas cette chance de faire partie des pionniers d'une nouvelle ère des rencontres en ligne basée sur la vidéo et l'authenticité. Rejoignez-nous et construisons ensemble une communauté unique et bienveillante."
     },
     "content": {
-      "title": "Lorem ipsum",
-      "description": "BIM sera bientôt déployé sur l’Apple store et sur Google Store. Si tu souhaites participer à l’aventure et faire partie des 1000 premiers utilisateurs, rien de plus simple, inscrits toi maintenant et nous t’enverrons une alerte lors du lancement de l’app."
+      "title": "Rejoignez-nous dès aujourd'hui en vous préinscrivant à BIM !",
+      "description": "Vous êtes invité à vous préinscrire pour faire partie des premiers utilisateurs de BIM. Pour cela rien de plus simple, remplissez le formulaire ci contre. Cela ne vous engage à rien et c’est totalement gratuit.  Cette étape exclusive vous permet de découvrir, avant tout le monde, une nouvelle manière de se connecter grâce à des échanges 100 % vidéo, authentiques et immersifs.\n\n En tant que préinscrit, vous bénéficierez d’un accès gratuit à l’application dès son lancement et pourrez participer activement à son développement en parrainant vos proches.  Vos retours seront essentiels pour peaufiner l’expérience utilisateur et intégrer les fonctionnalités qui feront de BIM une plateforme incontournable. Cette préinscription est également l’occasion de rejoindre une communauté innovante et bienveillante, prête à révolutionner les interactions sociales. Ne manquez pas cette opportunité unique de faire partie des pionniers et de contribuer à une aventure qui s’annonce passionnante !"
     },
     "form": {
       "title": "INFORMATIONS DE BASE",
