@@ -30,14 +30,14 @@ const socialIcons: SocialIcon[] = [
     height: 9,
   },
   {
-    href: 'https://www.instagram.com/',
+    href: 'https://www.instagram.com/bim.dating?igsh=MXV4YWFyZDVhNm1vaQ==',
     src: instagramIcon.src,
     alt: 'Instagram',
     width: 12,
     height: 12,
   },
   {
-    href: 'https://www.tiktok.com',
+    href: 'https://www.tiktok.com/@bim.video.dating?_t=ZN-8sZeUKK3cDm&_r=1',
     src: tiktokIcon.src,
     alt: 'Tiktok',
     width: 10,
