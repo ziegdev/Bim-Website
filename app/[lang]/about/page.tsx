@@ -94,24 +94,6 @@ export default function page() {
           scrollToSection(ourConceptRef)
         }
       />
-
-      <ContentSection
-        title={dict.about.aboutUs.title}
-        startingWord={dict.about.aboutUs.startingWord}
-        description={dict.about.aboutUs.description}
-        image={aboutUsImages.src}
-        backgroundImage={aboutUsBg.src}
-        backgroundImageMobile={aboutUsBgMobile.src}
-        button={{
-          text: dict.about.aboutUs.button,
-          textColor: 'text-white',
-          backgroundColor: 'bg-[#d10062]',
-          reverse: true,
-        }}
-        idPassedToButton="about-us"
-        onButtonClick={(id) => handleButtonClick(id)}
-        reverse={true}
-      />
       <div ref={ourConceptRef}>
         <ContentSection
           title={dict.about.ourConcept.title}
@@ -131,6 +113,24 @@ export default function page() {
           onButtonClick={(id) => handleButtonClick(id)}
         />
       </div>
+      <ContentSection
+        title={dict.about.aboutUs.title}
+        startingWord={dict.about.aboutUs.startingWord}
+        description={dict.about.aboutUs.description}
+        image={aboutUsImages.src}
+        backgroundImage={aboutUsBg.src}
+        backgroundImageMobile={aboutUsBgMobile.src}
+        button={{
+          text: dict.about.aboutUs.button,
+          textColor: 'text-white',
+          backgroundColor: 'bg-[#d10062]',
+          reverse: true,
+        }}
+        idPassedToButton="about-us"
+        onButtonClick={(id) => handleButtonClick(id)}
+        reverse={true}
+      />
+
       <section
         className="relative overflow-hidden"
         ref={getStartedRef}
