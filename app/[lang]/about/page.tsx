@@ -174,12 +174,12 @@ export default function page() {
               >
                 {dict.about.getStarted.title}
               </Typography>
-              <Typography
+{/*               <Typography
                 variant="Bim4Regular"
                 className="mb-8 text-center text-base text-[#4b0325] sm:text-justify sm:text-lg"
-              >
+              > */}
                 {dict.about.getStarted.description}
-              </Typography>
+{/*               </Typography> */}
               <CustomButton
                 onClick={() => routeToPreRegisterPage()}
                 variant="tertiary"
