@@ -58,18 +58,14 @@ const VideoSection = () => {
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative h-[90%] w-[90%]">
-{/*               <video
+              <video
                 className="h-full w-full rounded-3xl"
                 controls
                 autoPlay
               >
                 <source
-                  src="https://youtu.be/i4soY_Xd-tU"
-                  type="video/mp4"
-                /> */}
-                <iframe
-                  className="w-full aspect-video self-stretch md:min-h-96"
                   src="https://www.youtube.com/embed/1FLYZdxsteo"
+                  type="video/mp4"
                 />
                 Your browser does not support the video tag.
               </video>
