@@ -65,7 +65,7 @@ const VideoSection = () => {
               >
                 <source
                   src="https://youtu.be/i4soY_Xd-tU"
-                  type="video/mp4"
+/*                   type="video/mp4" */
                 />
                 Your browser does not support the video tag.
               </video>
