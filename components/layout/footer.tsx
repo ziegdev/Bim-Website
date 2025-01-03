@@ -51,7 +51,7 @@ const socialIcons: SocialIcon[] = [
     height: 12,
   },
   {
-    href: 'https://www.youtube.com',
+    href: 'https://www.youtube.com/@BimDating',
     src: youtubeIcon.src,
     alt: 'Youtube',
     width: 15,
