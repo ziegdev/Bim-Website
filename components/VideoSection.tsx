@@ -17,11 +17,7 @@ const VideoSection = () => {
     setIsPlaying(true);
   };
 
-  const videoSrc = lg
-    ? '/videos/intro-lg.mp4'
-    : sm
-      ? '../public/videos/intro-md.webm'
-      : '../public/videos/intro-sm.mp4';
+  const videoSrc = '/videos/intro-lg.mp4';
   const posterSrc = '/videos/banner-lg.png';
 
   return (
