@@ -72,7 +72,7 @@ export default function page() {
         />
         <div className="container relative z-10 mx-auto grid grid-cols-1 gap-12 py-8 lg:grid-cols-2 lg:gap-28 lg:py-24">
           <div>
-{/*             <motion.div
+            {/*             <motion.div
               variants={itemVariants}
               className="order-1 hidden flex-1 justify-center sm:order-2 sm:flex"
             >

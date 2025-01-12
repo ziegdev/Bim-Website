@@ -177,7 +177,7 @@ export default function page() {
               </Typography>
               <Typography
                 variant="Bim4Regular"
-                className="mb-8 text-center text-base text-[#4b0325] sm:text-justify "
+                className="mb-8 text-center text-base text-[#4b0325] sm:text-justify"
               >
                 {dict.about.getStarted.description}
               </Typography>

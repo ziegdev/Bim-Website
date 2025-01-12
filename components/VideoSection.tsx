@@ -2,16 +2,27 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 import { PlayIcon } from 'lucide-react';
-
+import {
+  useMediaQuery,
+  useIsClient,
+} from '@sohanemon/utils/hooks';
 import aboutUsOurConceptImage from '../public/images/about-us-our-concept-image.svg';
 import thumbnailImage from '../public/images/thumbnail.svg';
 
 const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
-
+  const sm = useMediaQuery('sm');
+  const lg = useMediaQuery('lg');
   const handlePlayClick = () => {
     setIsPlaying(true);
   };
+
+  const videoSrc = lg
+    ? '/videos/intro-lg.mp4'
+    : sm
+      ? '../public/videos/intro-md.webm'
+      : '../public/videos/intro-sm.mp4';
+  const posterSrc = '/videos/banner-lg.png';
 
   return (
     <div className="relative overflow-hidden rounded-3xl">
@@ -28,7 +39,7 @@ const VideoSection = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="relative h-[90%] w-[90%]">
               <Image
-                src={thumbnailImage.src}
+                src={posterSrc}
                 alt="Video thumbnail"
                 layout="fill"
                 objectFit="cover"
@@ -62,11 +73,9 @@ const VideoSection = () => {
                 className="h-full w-full rounded-3xl"
                 controls
                 autoPlay
+                preload="auto"
               >
-                <source
-                  src="https://www.youtube.com/embed/1FLYZdxsteo"
-                  type="video/mp4"
-                />
+                <source src={videoSrc} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
