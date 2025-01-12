@@ -94,24 +94,6 @@ export default function page() {
           scrollToSection(ourConceptRef)
         }
       />
-
-      <ContentSection
-        title={dict.about.aboutUs.title}
-        startingWord={dict.about.aboutUs.startingWord}
-        description={dict.about.aboutUs.description}
-        image={aboutUsImages.src}
-        backgroundImage={aboutUsBg.src}
-        backgroundImageMobile={aboutUsBgMobile.src}
-        button={{
-          text: dict.about.aboutUs.button,
-          textColor: 'text-white',
-          backgroundColor: 'bg-[#d10062]',
-          reverse: true,
-        }}
-        idPassedToButton="about-us"
-        onButtonClick={(id) => handleButtonClick(id)}
-        reverse={true}
-      />
       <div ref={ourConceptRef}>
         <ContentSection
           title={dict.about.ourConcept.title}
@@ -131,9 +113,28 @@ export default function page() {
           onButtonClick={(id) => handleButtonClick(id)}
         />
       </div>
+      <ContentSection
+        title={dict.about.aboutUs.title}
+        startingWord={dict.about.aboutUs.startingWord}
+        description={dict.about.aboutUs.description}
+        image={aboutUsImages.src}
+        backgroundImage={aboutUsBg.src}
+        backgroundImageMobile={aboutUsBgMobile.src}
+        button={{
+          text: dict.about.aboutUs.button,
+          textColor: 'text-white',
+          backgroundColor: 'bg-[#d10062]',
+          reverse: true,
+        }}
+        idPassedToButton="about-us"
+        onButtonClick={(id) => handleButtonClick(id)}
+        reverse={true}
+      />
+
       <section
         className="relative overflow-hidden"
         ref={getStartedRef}
+        reverse={true}
       >
         <div
           className="absolute inset-0 z-0 bg-cover bg-right"
@@ -175,8 +176,8 @@ export default function page() {
                 {dict.about.getStarted.title}
               </Typography>
               <Typography
-                variant="nexaRegular"
-                className="mb-8 text-center text-base text-[#4b0325] sm:text-justify sm:text-lg"
+                variant="Bim4Regular"
+                className="mb-8 text-center text-base text-[#4b0325] sm:text-justify"
               >
                 {dict.about.getStarted.description}
               </Typography>
