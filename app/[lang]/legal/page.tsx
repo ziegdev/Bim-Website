@@ -2,19 +2,38 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-
+import Image from 'next/image';
 import HeroSection from '@/components/HeroSection';
 import { Typography } from '@/components/Typography';
-
+import pdfPNG from '../../../public/pdf.png';
 import { LegalArticles } from '@/lib/bin/LegalData';
 import { Languages } from '@/lib/types/languages';
 import { useDictionary } from '@/hooks/useDictionary';
-
+import Link from 'next/link';
 import legalHero from '../../../public/images/legal-hero.png';
 import legalHeroMobile from '../../../public/images/legal-hero-mobile.png';
 import legalBg from '../../../public/images/legal-bg.png';
 import legalBgMobile from '../../../public/images/legal-bg-mobile.png';
 
+const data = [
+  {
+    title: 'General_terms_and_condtions',
+    url: 'general_terms_and_conditions',
+  },
+  {
+    title: 'Privacy_policy',
+    url: 'privacy_policy',
+  },
+  {
+    title: 'Ethical_charter',
+    url: 'ethical_charter',
+  },
+
+  {
+    title: 'Dating_safety_tips',
+    url: 'dating_safety_tips',
+  },
+];
 export default function page() {
   const params = useParams();
   const lang = params.lang as Languages;
@@ -99,7 +118,38 @@ export default function page() {
                 </Typography>
               </div>
             ))}
-          testing
+          {/* pdf files section */}
+          <div className="">
+            {data.map((item) => (
+              <div className="flex items-center gap-1 hover:cursor-pointer hover:underline">
+                <Image
+                  src={pdfPNG}
+                  alt="pdf"
+                  width={40}
+                  height={40}
+                  className="h-auto w-[30px] lg:w-[40px]"
+                  loading="lazy"
+                />
+                <Typography
+                  variant="Bim4Regular"
+                  className="text-justify text-base text-[#4B0325] sm:text-lg"
+                >
+                  <Link
+                    href={item?.url}
+                    passHref
+                    legacyBehavior
+                  >
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item?.title}
+                    </a>
+                  </Link>
+                </Typography>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

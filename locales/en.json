@@ -231,5 +231,11 @@
     "saveChoices": "Save choices",
     "acceptAll": "Accept all",
     "rejectAll": "Reject all"
+  },
+  "files": {
+    "general_terms_and_conditions": "/pdf/general_terms_english.pdf",
+    "ethical_charter": "/pdf/ethical_charter_english.pdf",
+    "privacy_policy": "/pdf/privacy_policy_english.pdf",
+    "dating_safety_tips": "/pdf/dating_safety_tips_english.pdf"
   }
 }

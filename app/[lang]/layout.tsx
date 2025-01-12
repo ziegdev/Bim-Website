@@ -1,9 +1,8 @@
 import dynamic from 'next/dynamic';
-
+import { pdfjs } from 'react-pdf';
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
-
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
@@ -18,7 +17,10 @@ import {
   GoogleTagManager,
 } from '@next/third-parties/google';
 import { siteConfig } from '@/lib/site';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
 // import {  GoogleTagManager } from '@next/third-parties/google'
+pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,10 +33,12 @@ export default async function RootLayout({
   children,
   params: { lang },
 }: {
-  children: ReactNode;
+  children: any;
   params: { lang: Languages };
 }) {
   const dict = await getDictionary(lang);
+  const shouldHideHeaderFooter =
+    children?.metadata?.hideHeaderFooter ?? false;
 
   return (
     <html lang={lang}>
@@ -52,11 +56,11 @@ export default async function RootLayout({
         )}
       >
         <LanguageProvider>
-          <Header />
+          {!shouldHideHeaderFooter && <Header />}
           {children}
           {/* <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!}/> */}
           <Toaster />
-          <Footer />
+          {!shouldHideHeaderFooter && <Footer />}
           <CookieConsentDialog />
         </LanguageProvider>
       </body>
