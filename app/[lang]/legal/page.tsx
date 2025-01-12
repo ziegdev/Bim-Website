@@ -104,7 +104,7 @@ export default function page() {
                   Article {legalArticle.id} -{' '}
                   {
                     dict.legal.articles[legalArticle.id - 1]
-                      .title
+                      ?.title
                   }
                 </Typography>
                 <Typography
@@ -113,7 +113,7 @@ export default function page() {
                 >
                   {
                     dict.legal.articles[legalArticle.id - 1]
-                      .description
+                      ?.description
                   }
                 </Typography>
               </div>
