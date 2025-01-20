@@ -30,4 +30,19 @@ export const LegalArticles: LegalArticle[] = [
     titleKey: 'legal.articles.4.title',
     descriptionKey: 'legal.articles.4.description',
   },
+  {
+    id: 6,
+    titleKey: 'legal.articles.5.title',
+    descriptionKey: 'legal.articles.4.description',
+  },
+  {
+    id: 7,
+    titleKey: 'legal.articles.6.title',
+    descriptionKey: 'legal.articles.4.description',
+  },
+  {
+    id: 8,
+    titleKey: 'legal.articles.7.title',
+    descriptionKey: 'legal.articles.4.description',
+  },
 ];
