@@ -102,8 +102,8 @@
     },
     "articles": [
       {
-        "title": "L'ÉDITEUR",
-        "description": "L'édition du Site est assurée par Bim Group SARL-S avec un capital de 10 000 euros, enregistrée au Registre du Commerce et des Sociétés de Luxembourg sous le numéro B287681 dont le siège social est situé au 20, rue Schoenberg 8283 Kehlen - Luxembourg, Adresse email : contact@bim-dating.com. Le Directeur de la Publication est Houzet Vincent ci-après 'l'Éditeur'."
+        "title": "LES MENTIONS LÉGALES",
+        "description": "L'édition du site http://www.bim-dating.com est assurée par la Société SARLS Bim Group au capital de 10000 euros, immatriculée au RCS de Luxembourg sous le numéro B287681, dont le siège social est situé au 20, rue Schoenberg – 8283 Kehlen, Luxembourg. Adresse e-mail : contact@bim-dating.com. Le Directeur de la publication est : Vincent Houzet. L'hébergeur du site http://www.bim-dating.com est la société OVH, dont le siège social est situé au 2, Rue Kellermann 59100 Roubaix, avec le numéro de téléphone : 09 72 10 10 07."
       },
       {
         "title": "L'HÉBERGEUR",
@@ -123,6 +123,14 @@
       },
       {
         "title": "TEST2",
+        "description": "Le Site veille à ce que l'Utilisateur collecte et traite les informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition des données personnelles. L'utilisateur exerce ce droit : · par email à l'adresse email contact@bim-dating.com Toute utilisation, reproduction, distribution, commercialisation, modification de tout ou partie du Site, sans autorisation de l'Éditeur est interdite et pourra entraîner des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
+      },
+      {
+        "title": "TEST3",
+        "description": "Le Site veille à ce que l'Utilisateur collecte et traite les informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition des données personnelles. L'utilisateur exerce ce droit : · par email à l'adresse email contact@bim-dating.com Toute utilisation, reproduction, distribution, commercialisation, modification de tout ou partie du Site, sans autorisation de l'Éditeur est interdite et pourra entraîner des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
+      },
+      {
+        "title": "TEST4",
         "description": "Le Site veille à ce que l'Utilisateur collecte et traite les informations personnelles dans le respect de la vie privée conformément à la loi n°78-17 du 6 janvier 1978 relative à l'informatique, aux fichiers et aux libertés. En vertu de la loi Informatique et Libertés, en date du 6 janvier 1978, l'Utilisateur dispose d'un droit d'accès, de rectification, de suppression et d'opposition des données personnelles. L'utilisateur exerce ce droit : · par email à l'adresse email contact@bim-dating.com Toute utilisation, reproduction, distribution, commercialisation, modification de tout ou partie du Site, sans autorisation de l'Éditeur est interdite et pourra entraîner des actions et poursuites judiciaires telles que notamment prévues par le Code de la propriété intellectuelle et le Code civil."
       }
     ]
