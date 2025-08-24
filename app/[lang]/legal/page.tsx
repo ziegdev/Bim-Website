@@ -33,6 +33,14 @@ const data = [
     title: 'Dating_safety_tips',
     url: 'dating_safety_tips',
   },
+  {
+    title: 'Dating_safety_tips',
+    url: 'dating_safety_tips',
+  },
+  {
+    title: 'Referral_policy',
+    url: 'referral_policy',
+  },
 ];
 export default function page() {
   const params = useParams();
