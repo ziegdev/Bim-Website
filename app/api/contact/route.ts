@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 async function verifyRecaptcha(token: string) {
-  const secretKey = "6LcrJ5EqAAAAADdeE7w3S-Qszeaga51GminL1jQW"
+  const secretKey =
+    '6LcrJ5EqAAAAADdeE7w3S-Qszeaga51GminL1jQW';
   // process.env.RECAPTCHA_SECRET_KEY;
   const verifyUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`;
   const response = await fetch(verifyUrl, {
@@ -26,7 +27,7 @@ export async function POST(request: Request) {
   const transporter = nodemailer.createTransport({
     host: 'ssl0.ovh.net',
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.CONTACT_EMAIL_USER,
       pass: process.env.CONTACT_EMAIL_PASSWORD,
