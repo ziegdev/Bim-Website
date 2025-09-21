@@ -91,6 +91,8 @@ export async function POST(request: Request) {
     html: htmlContent,
   };
 
+  console.log('Sending email with options:', mailOptions);
+
   try {
     await transporter.sendMail(mailOptions);
     console.log('Email sent successfully');
