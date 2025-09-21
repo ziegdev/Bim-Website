@@ -182,7 +182,7 @@ export async function POST(request: Request) {
       error,
     );
     return NextResponse.json(
-      { error: 'Error submitting pre-registration' },
+      { error: error },
       { status: 500 },
     );
   }

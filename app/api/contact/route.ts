@@ -106,7 +106,7 @@ export async function POST(request: Request) {
     console.error('Error sending email', error);
     return NextResponse.json(
       {
-        error: 'Error sending email',
+        error: error,
       },
       { status: 500 },
     );
