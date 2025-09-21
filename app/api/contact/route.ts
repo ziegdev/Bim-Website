@@ -27,7 +27,7 @@ export async function POST(request: Request) {
   const transporter = nodemailer.createTransport({
     host: 'ssl0.ovh.net',
     port: 587,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.CONTACT_EMAIL_USER,
       pass: process.env.CONTACT_EMAIL_PASSWORD,
