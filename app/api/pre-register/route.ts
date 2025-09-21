@@ -71,7 +71,7 @@ async function sendEmail(
   const transporter = nodemailer.createTransport({
     host: 'ssl0.ovh.net',
     port: 587,
-    secure: false,
+    secure: true,
     auth: {
       user: process.env.PRE_REGISTER_EMAIL_USER,
       pass: process.env.PRE_REGISTER_EMAIL_PASSWORD,
