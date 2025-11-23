@@ -226,6 +226,7 @@
   "header": {
     "logo": "Das Dating Sozial Media",
     "button": "Virregistréieren",
+    "socialMedia": "Medien",
     "MainHeader": {
       "Home": "Startseite",
       "About": "Iwwert",
@@ -233,6 +234,12 @@
       "Contact": "Kontakt",
       "PreRegister": "Virregistréieren"
     }
+  },
+  "socialMedia": {
+    "title": "SOZIAL MEDIEN",
+    "description": "Follegt eis fir eise neie Contenu ze kucken a bleift iwwer eis kommend Offeren informéiert!",
+    "videoContent": "Video Contenu",
+    "ourSocials": "Eis Netzwierker"
   },
   "footer": {
     "legal": "Legal",

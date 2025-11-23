@@ -181,6 +181,7 @@
   "header": {
     "logo": "The Dating Social Media",
     "button": " Pre-Register",
+    "socialMedia": "Medias",
     "MainHeader": {
       "Home": "Home",
       "About": "About",
@@ -188,6 +189,12 @@
       "Contact": "Contact",
       "PreRegister": "Pre-Register"
     }
+  },
+  "socialMedia": {
+    "title": "SOCIAL MEDIAS",
+    "description": "Follow us to check our new content and to stay tuned for our incoming offers!",
+    "videoContent": "Video Content",
+    "ourSocials": "Our Socials"
   },
   "footer": {
     "legal": "Legal",

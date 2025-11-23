@@ -226,6 +226,7 @@
   "header": {
     "logo": "Das Dating Sozial Media",
     "button": "Vorregistrieren",
+    "socialMedia": "Medien",
     "MainHeader": {
       "Home": "Startseite",
       "About": "Über Uns",
@@ -233,6 +234,12 @@
       "Contact": "Kontakt",
       "PreRegister": "Vorregistrieren"
     }
+  },
+  "socialMedia": {
+    "title": "SOZIALE MEDIEN",
+    "description": "Folgen Sie uns, um unsere neuen Inhalte zu sehen und über unsere kommenden Angebote informiert zu bleiben!",
+    "videoContent": "Videoinhalt",
+    "ourSocials": "Unsere Netzwerke"
   },
   "footer": {
     "legal": "Rechtliches",

@@ -226,6 +226,7 @@
   "header": {
     "logo": "Le Réseau Social de Rencontres",
     "button": "Pré-Inscription",
+    "socialMedia": "Médias",
     "MainHeader": {
       "Home": "Accueil",
       "About": "À Propos",
@@ -233,6 +234,12 @@
       "Contact": "Contact",
       "PreRegister": "Pré-Inscription"
     }
+  },
+  "socialMedia": {
+    "title": "MÉDIAS SOCIAUX",
+    "description": "Suivez-nous pour découvrir notre nouveau contenu et restez informés de nos offres à venir !",
+    "videoContent": "Contenu Vidéo",
+    "ourSocials": "Nos Réseaux"
   },
   "footer": {
     "legal": "Légal",

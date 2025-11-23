@@ -226,6 +226,7 @@
   "header": {
     "logo": "Il Social Media degli Incontri",
     "button": "Pre-Registrazione",
+    "socialMedia": "Media",
     "MainHeader": {
       "Home": "Home",
       "About": "Chi Siamo",
@@ -233,6 +234,12 @@
       "Contact": "Contatto",
       "PreRegister": "Pre-Registrazione"
     }
+  },
+  "socialMedia": {
+    "title": "SOCIAL MEDIA",
+    "description": "Seguici per vedere i nostri nuovi contenuti e rimani aggiornato sulle nostre offerte in arrivo!",
+    "videoContent": "Contenuti Video",
+    "ourSocials": "I Nostri Social"
   },
   "footer": {
     "legal": "Legale",

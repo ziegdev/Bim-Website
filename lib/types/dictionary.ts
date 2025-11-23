@@ -177,6 +177,7 @@ export interface Dictionary {
   header: {
     logo: string;
     button: string;
+    socialMedia: string;
     MainHeader: {
       Home: string;
       About: string;
@@ -184,6 +185,12 @@ export interface Dictionary {
       Contact: string;
       PreRegister: string;
     };
+  };
+  socialMedia: {
+    title: string;
+    description: string;
+    videoContent: string;
+    ourSocials: string;
   };
 
   footer: {

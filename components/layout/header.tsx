@@ -95,11 +95,11 @@ export function Header() {
             <Button
               className="hidden rounded-lg bg-white text-[#4B0325] hover:bg-yellow-400 md:block"
               onClick={() => {
-                router.push(`/${lang}/pre-register`);
+                router.push(`/${lang}/social-medias`);
                 closeMenu?.();
               }}
             >
-              {dict.header.button}
+              {dict.header.socialMedia}
             </Button>
             {/* </Link> */}
             <div className="">

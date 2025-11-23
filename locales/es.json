@@ -226,6 +226,7 @@
   "header": {
     "logo": "La Red Social de Citas",
     "button": "Pre-Registro",
+    "socialMedia": "Medios",
     "MainHeader": {
       "Home": "Inicio",
       "About": "Sobre Nosotros",
@@ -233,6 +234,12 @@
       "Contact": "Contacto",
       "PreRegister": "Pre-Registro"
     }
+  },
+  "socialMedia": {
+    "title": "REDES SOCIALES",
+    "description": "¡Síguenos para ver nuestro nuevo contenido y mantente al tanto de nuestras próximas ofertas!",
+    "videoContent": "Contenido de Video",
+    "ourSocials": "Nuestras Redes"
   },
   "footer": {
     "legal": "Legal",
