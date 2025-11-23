@@ -10,9 +10,24 @@ export function useDictionary(
 ) {
   const [dict, setDict] = useState<Dictionary | null>(null);
   useEffect(() => {
-    getDictionary(language as Languages).then(
-      (result: Dictionary) => setDict(result),
-    );
+    getDictionary(language as Languages)
+      .then((result: Dictionary) => {
+        setDict(result);
+      })
+      .catch((error) => {
+        console.error('Error loading dictionary:', error);
+        // Fallback to English if the requested language fails
+        if (language !== 'en') {
+          getDictionary('en')
+            .then((result: Dictionary) => setDict(result))
+            .catch((fallbackError) => {
+              console.error(
+                'Error loading fallback dictionary:',
+                fallbackError,
+              );
+            });
+        }
+      });
   }, [language]);
 
   return dict;

@@ -276,6 +276,7 @@ export default function SocialMediasPage() {
     'video' | 'socials'
   >('video');
   const [loading, setLoading] = useState(true);
+  const [dictLoading, setDictLoading] = useState(true);
   const [windowWidth, setWindowWidth] = useState<
     number | null
   >(null);
@@ -291,11 +292,34 @@ export default function SocialMediasPage() {
   }, []);
 
   useEffect(() => {
+    if (dict) {
+      setDictLoading(false);
+    }
+  }, [dict]);
+
+  useEffect(() => {
     fetch('/api/youtube-videos')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(
+            `HTTP error! status: ${res.status}`,
+          );
+        }
+        return res.json();
+      })
       .then((data) => {
-        if (data.success && data.videos) {
+        console.log('YouTube API response:', data);
+        if (
+          data.success &&
+          data.videos &&
+          Array.isArray(data.videos)
+        ) {
           setYoutubeVideos(data.videos);
+          console.log(
+            `Loaded ${data.videos.length} YouTube videos`,
+          );
+        } else {
+          console.warn('No videos in response:', data);
         }
         setLoading(false);
       })
@@ -308,17 +332,26 @@ export default function SocialMediasPage() {
       });
   }, []);
 
-  if (!dict) {
-    return null;
+  if (dictLoading || !dict) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-white">
+        <div className="text-center text-gray-500">
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
   }
 
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <HeroSection
-        title={dict.socialMedia.title}
-        description={dict.socialMedia.description}
-        backgroundImage={socialMediaHero.src}
-        backgroundImageMobile={socialMediaHero.src}
+        title={dict?.socialMedia?.title || 'SOCIAL MEDIAS'}
+        description={
+          dict?.socialMedia?.description ||
+          'Follow us to check our new content and to stay tuned for our incoming offers!'
+        }
+        backgroundImage={socialMediaHero?.src}
+        backgroundImageMobile={socialMediaHero?.src}
       />
 
       {/* Main Content Area with Background */}
@@ -341,14 +374,16 @@ export default function SocialMediasPage() {
               variant="video"
               isActive={activeTab === 'video'}
             >
-              {dict.socialMedia.videoContent}
+              {dict?.socialMedia?.videoContent ||
+                'Video Content'}
             </BackgroundButton>
             <BackgroundButton
               onClick={() => setActiveTab('socials')}
               variant="socials"
               isActive={activeTab === 'socials'}
             >
-              {dict.socialMedia.ourSocials}
+              {dict?.socialMedia?.ourSocials ||
+                'Our Socials'}
             </BackgroundButton>
           </div>
 

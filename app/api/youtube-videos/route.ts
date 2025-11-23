@@ -136,22 +136,155 @@ async function scrapeYouTubeChannel(
       }
     }
 
-    // Method 2: Scrape the channel page (fallback - may not work due to YouTube's anti-scraping)
-    // Try to fetch the RSS feed first (more reliable)
+    // Method 2: Try to get channel ID from the channel page and then use RSS feed
     try {
-      const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelHandle}`;
-      const rssResponse = await fetch(rssUrl);
+      // First, try to get the channel ID by fetching the channel page
+      const channelPageUrl = `https://www.youtube.com/${channelHandle}`;
+      let channelPageResponse: Response | null = null;
+      let channelId: string | null = null;
 
-      if (rssResponse.ok) {
-        const rssText = await rssResponse.text();
+      try {
+        // Create abort controller for timeout
+        const controller = new AbortController();
+        const timeoutId = setTimeout(
+          () => controller.abort(),
+          10000,
+        ); // 10 second timeout
+
+        channelPageResponse = await fetch(channelPageUrl, {
+          headers: {
+            'User-Agent':
+              'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          },
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
+
+        if (channelPageResponse.ok) {
+          const channelPageText =
+            await channelPageResponse.text();
+          // Try to extract channel ID from the page
+          const channelIdMatch = channelPageText.match(
+            /"channelId":"([^"]+)"/,
+          );
+          if (channelIdMatch) {
+            channelId = channelIdMatch[1];
+          }
+        }
+      } catch (fetchError) {
+        console.error(
+          'Error fetching channel page:',
+          fetchError,
+        );
+        // Continue without channel ID
+      }
+
+      // If we got a channel ID, use RSS feed
+      if (channelId) {
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
+        const rssResponse = await fetch(rssUrl);
+
+        if (rssResponse.ok) {
+          const rssText = await rssResponse.text();
+          const videoIds = new Set<string>();
+          const videos: YouTubeVideo[] = [];
+
+          // Parse RSS feed using XML parser or regex
+          const videoIdPattern =
+            /<yt:videoId>([^<]+)<\/yt:videoId>/g;
+          const titlePattern = /<title>([^<]+)<\/title>/g;
+          const publishedPattern =
+            /<published>([^<]+)<\/published>/g;
+          const titles: string[] = [];
+          const publishedDates: string[] = [];
+
+          let match;
+          while (
+            (match = videoIdPattern.exec(rssText)) !== null
+          ) {
+            const videoId = match[1];
+            if (
+              videoId &&
+              videoId.length === 11 &&
+              !videoIds.has(videoId)
+            ) {
+              videoIds.add(videoId);
+              videos.push({
+                id: videoId,
+                embedUrl: getEmbedUrl(videoId),
+              });
+            }
+          }
+
+          // Extract titles (skip the first one which is usually the channel name)
+          while (
+            (match = titlePattern.exec(rssText)) !== null
+          ) {
+            if (match[1] && !match[1].includes('YouTube')) {
+              titles.push(match[1]);
+            }
+          }
+
+          // Extract published dates
+          while (
+            (match = publishedPattern.exec(rssText)) !==
+            null
+          ) {
+            publishedDates.push(match[1]);
+          }
+
+          // Match titles and dates with videos
+          videos.forEach((video, index) => {
+            if (titles[index + 1]) {
+              // Skip first title (channel name)
+              video.title = titles[index + 1];
+            }
+            if (publishedDates[index]) {
+              video.publishedAt = publishedDates[index];
+            }
+          });
+
+          if (videos.length > 0) {
+            // Sort by published date (latest first)
+            return videos.sort((a, b) => {
+              const dateA = a.publishedAt
+                ? new Date(a.publishedAt).getTime()
+                : 0;
+              const dateB = b.publishedAt
+                ? new Date(b.publishedAt).getTime()
+                : 0;
+              return dateB - dateA;
+            });
+          }
+        }
+      }
+    } catch (rssError) {
+      console.error('RSS feed error:', rssError);
+    }
+
+    // Last resort: Try alternative RSS feed format (for handle-based channels)
+    try {
+      // Try using the handle without @ symbol in user parameter
+      const handleWithoutAt = channelHandle.replace(
+        '@',
+        '',
+      );
+      const altRssUrl = `https://www.youtube.com/feeds/videos.xml?user=${handleWithoutAt}`;
+      const altRssResponse = await fetch(altRssUrl);
+
+      if (altRssResponse.ok) {
+        const rssText = await altRssResponse.text();
         const videoIds = new Set<string>();
         const videos: YouTubeVideo[] = [];
 
-        // Extract video IDs from RSS
         const videoIdPattern =
           /<yt:videoId>([^<]+)<\/yt:videoId>/g;
         const titlePattern = /<title>([^<]+)<\/title>/g;
+        const publishedPattern =
+          /<published>([^<]+)<\/published>/g;
         const titles: string[] = [];
+        const publishedDates: string[] = [];
 
         let match;
         while (
@@ -171,7 +304,6 @@ async function scrapeYouTubeChannel(
           }
         }
 
-        // Extract titles
         while (
           (match = titlePattern.exec(rssText)) !== null
         ) {
@@ -180,23 +312,41 @@ async function scrapeYouTubeChannel(
           }
         }
 
-        // Match titles with videos
+        while (
+          (match = publishedPattern.exec(rssText)) !== null
+        ) {
+          publishedDates.push(match[1]);
+        }
+
         videos.forEach((video, index) => {
-          if (titles[index]) {
-            video.title = titles[index];
+          if (titles[index + 1]) {
+            video.title = titles[index + 1];
+          }
+          if (publishedDates[index]) {
+            video.publishedAt = publishedDates[index];
           }
         });
 
         if (videos.length > 0) {
-          // Return all videos (already sorted by date from RSS)
-          return videos;
+          return videos.sort((a, b) => {
+            const dateA = a.publishedAt
+              ? new Date(a.publishedAt).getTime()
+              : 0;
+            const dateB = b.publishedAt
+              ? new Date(b.publishedAt).getTime()
+              : 0;
+            return dateB - dateA;
+          });
         }
       }
-    } catch (rssError) {
-      console.error('RSS feed error:', rssError);
+    } catch (altRssError) {
+      console.error(
+        'Alternative RSS feed error:',
+        altRssError,
+      );
     }
 
-    // Last resort: Return empty array (scraping HTML is unreliable)
+    // Last resort: Return empty array
     console.warn(
       'Unable to fetch YouTube videos. Please set YOUTUBE_API_KEY environment variable for best results.',
     );
@@ -210,31 +360,72 @@ async function scrapeYouTubeChannel(
 export async function GET() {
   try {
     const channelHandle = '@BimDating';
-    const videos =
-      await scrapeYouTubeChannel(channelHandle);
 
+    // Ensure we always return JSON, even if there's an error
+    let videos: YouTubeVideo[] = [];
+
+    try {
+      videos = await scrapeYouTubeChannel(channelHandle);
+      console.log(
+        `Fetched ${videos.length} videos for channel ${channelHandle}`,
+      );
+    } catch (scrapeError) {
+      console.error(
+        'Error in scrapeYouTubeChannel:',
+        scrapeError,
+      );
+      // Continue with empty array
+    }
+
+    if (videos.length === 0) {
+      console.warn(
+        'No videos found. This might be due to:',
+      );
+      console.warn(
+        '1. Missing YOUTUBE_API_KEY environment variable',
+      );
+      console.warn('2. Channel RSS feed not accessible');
+      console.warn('3. Channel has no videos');
+    }
+
+    // Always return JSON response
     return NextResponse.json(
       {
         success: true,
         videos: videos.map((video) => ({
-          id: video.id,
-          embedUrl: video.embedUrl,
-          thumbnail: video.thumbnail,
-          title: video.title,
-          description: video.description,
+          id: video.id || '',
+          embedUrl: video.embedUrl || '',
+          thumbnail: video.thumbnail || '',
+          title: video.title || '',
+          description: video.description || '',
         })),
       },
-      { status: 200 },
+      {
+        status: 200,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
     );
   } catch (error) {
+    // Ensure we always return JSON, even on unexpected errors
     console.error('Error in YouTube API route:', error);
     return NextResponse.json(
       {
         success: false,
         error: 'Failed to fetch YouTube videos',
         videos: [],
+        message:
+          error instanceof Error
+            ? error.message
+            : 'Unknown error',
       },
-      { status: 500 },
+      {
+        status: 500,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      },
     );
   }
 }

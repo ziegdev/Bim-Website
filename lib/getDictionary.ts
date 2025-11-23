@@ -1,6 +1,6 @@
-type Locale = keyof typeof dictionaries;
+type Locale = 'en' | 'fr' | 'es' | 'it' | 'lb' | 'de';
 
-const dictionaries = {
+const dictionaries: Record<Locale, () => Promise<any>> = {
   en: () =>
     import('../locales/en.json').then(
       (module) => module.default,
@@ -27,6 +27,22 @@ const dictionaries = {
     ),
 };
 
-export const getDictionary = async (locale: Locale) => {
-  return dictionaries[locale]();
+export const getDictionary = async (
+  locale: string,
+): Promise<any> => {
+  const normalizedLocale = locale as Locale;
+  const dictionaryLoader = dictionaries[normalizedLocale];
+
+  if (
+    !dictionaryLoader ||
+    typeof dictionaryLoader !== 'function'
+  ) {
+    // Fallback to English if locale is not found
+    console.warn(
+      `Locale "${locale}" not found, falling back to "en"`,
+    );
+    return dictionaries.en();
+  }
+
+  return dictionaryLoader();
 };
