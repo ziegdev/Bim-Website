@@ -35,7 +35,8 @@ async function scrapeYouTubeChannel(
 ): Promise<YouTubeVideo[]> {
   try {
     // Method 1: Try using YouTube Data API v3 (if API key is available)
-    const apiKey = process.env.YOUTUBE_API_KEY;
+    const apiKey =
+      'AIzaSyDamiQ0RnH_vnBYd5qCtA_EU15ptd9Ql48';
     if (apiKey) {
       try {
         let channelId: string | null = null;
