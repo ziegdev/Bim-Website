@@ -26,7 +26,19 @@ function extractVideoId(url: string): string | null {
 
 // Helper function to get embed URL from video ID
 function getEmbedUrl(videoId: string): string {
-  return `https://www.youtube.com/embed/${videoId}`;
+  const params = new URLSearchParams({
+    playsinline: '1',
+    modestbranding: '1',
+    rel: '0',
+    controls: '0',
+    enablejsapi: '1',
+    shorts: '1',
+    origin:
+      process.env.NEXT_PUBLIC_SITE_URL ??
+      'https://www.youtube.com',
+  });
+
+  return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
 }
 
 // Function to scrape YouTube channel videos

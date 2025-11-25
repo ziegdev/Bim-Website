@@ -24,15 +24,69 @@ import leftArrowIcon from '@/public/images/left-arrow.png';
 import rightArrowIcon from '@/public/images/right-arrow.png';
 import { useDictionary } from '@/hooks/useDictionary';
 import { Languages } from '@/lib/types/languages';
-import RightArrowIcon from '@/public/images/right-arrow.png';
-import LeftArrowIcon from '@/public/images/left-arrow.png';
-
 interface YouTubeVideo {
   id: string;
   embedUrl: string;
   thumbnail?: string;
   title?: string;
   description?: string;
+}
+
+function VideoEmbed({
+  video,
+  aspectClass = 'aspect-[9/16]',
+  roundedClass = 'rounded-2xl',
+}: {
+  video: YouTubeVideo;
+  aspectClass?: string;
+  roundedClass?: string;
+}) {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const thumbnail =
+    video.thumbnail ||
+    (video.id
+      ? `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`
+      : '');
+  const embedUrl =
+    video.embedUrl ||
+    (video.id
+      ? `https://www.youtube.com/embed/${video.id}`
+      : '');
+
+  return (
+    <div
+      className={`relative ${aspectClass} overflow-hidden bg-black shadow-lg ${roundedClass}`}
+    >
+      {isPlaying ? (
+        <iframe
+          src={embedUrl}
+          title={video.title || 'YouTube video'}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          className="absolute inset-0 h-full w-full border-0"
+        />
+      ) : (
+        <button
+          type="button"
+          onClick={() => setIsPlaying(true)}
+          className="absolute inset-0 h-full w-full"
+          aria-label={`Play ${video.title || 'video'}`}
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${thumbnail})` }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-black shadow-lg">
+              ▶
+            </span>
+          </div>
+        </button>
+      )}
+    </div>
+  );
 }
 
 // YouTube Carousel Component
@@ -84,21 +138,7 @@ function YouTubeCarousel({
               className="basis-full pl-2 sm:basis-1/2 md:pl-4 lg:basis-1/4"
             >
               <div className="flex flex-col">
-                <div className="relative aspect-[9/16] overflow-hidden rounded-xl bg-black shadow-lg">
-                  <iframe
-                    src={video.embedUrl}
-                    width="100%"
-                    height="100%"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    title={
-                      video.title ||
-                      `YouTube video ${index + 1}`
-                    }
-                    frameBorder="0"
-                    allowFullScreen
-                    className="h-full w-full"
-                  />
-                </div>
+                <VideoEmbed video={video} />
                 {video.title && (
                   <p className="mt-2 line-clamp-2 text-center text-sm text-gray-700">
                     {video.title}
@@ -182,14 +222,14 @@ function SocialMediaLinks() {
       name: 'Facebook',
       handle: '@BimDating',
       icon: facebookIcon,
-      href: 'https://www.facebook.com',
+      href: 'https://www.facebook.com/BimDating',
       iconBg: 'bg-blue-600',
     },
     twitter: {
       name: 'X (Twitter)',
       handle: '@BimDating',
       icon: twitterIcon,
-      href: 'https://www.twitter.com',
+      href: 'https://x.com/bimdating?s=21',
       iconBg: 'bg-black',
     },
   };
@@ -392,18 +432,18 @@ export default function SocialMediasPage() {
             <div className="w-full max-w-6xl space-y-12">
               {/* YouTube Video Section */}
               <div className="mx-auto w-full max-w-4xl">
-                <div className="aspect-video w-full overflow-hidden rounded-xl shadow-2xl">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    src="https://www.youtube.com/embed/i4soY_Xd-tU?si=7ZHjeV8e5MdalRDF"
-                    title="YouTube video player"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="h-full w-full"
-                  ></iframe>
-                </div>
+                <VideoEmbed
+                  video={{
+                    id: 'i4soY_Xd-tU',
+                    embedUrl:
+                      'https://www.youtube.com/embed/i4soY_Xd-tU?rel=0&controls=0&modestbranding=1&playsinline=1',
+                    thumbnail:
+                      'https://img.youtube.com/vi/i4soY_Xd-tU/maxresdefault.jpg',
+                    title: 'YouTube video player',
+                  }}
+                  aspectClass="aspect-video"
+                  roundedClass="rounded-xl"
+                />
               </div>
 
               {/* YouTube Carousel Section */}

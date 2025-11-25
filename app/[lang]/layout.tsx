@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import { pdfjs } from 'react-pdf';
+
 import type { Metadata } from 'next';
 import './globals.css';
 import { Inter } from 'next/font/google';
@@ -17,10 +17,7 @@ import {
   GoogleTagManager,
 } from '@next/third-parties/google';
 import { siteConfig } from '@/lib/site';
-import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import 'react-pdf/dist/esm/Page/TextLayer.css';
 // import {  GoogleTagManager } from '@next/third-parties/google'
-pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
 
 const inter = Inter({
   subsets: ['latin'],

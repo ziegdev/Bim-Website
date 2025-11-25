@@ -115,7 +115,10 @@ export default function Home() {
                 }}
                 className="rounded-2xl"
               >
-                <Link href="/pre-register">
+                <Link
+                  href="https://apps.apple.com/us/app/bim-dating/id6471999521"
+                  target="_blank"
+                >
                   <Image
                     src={appSroteImage.src}
                     alt="Download on the App Store"
@@ -134,7 +137,10 @@ export default function Home() {
                 }}
                 className="rounded-2xl"
               >
-                <Link href="/pre-register">
+                <Link
+                  href="https://play.google.com/store/apps/details?id=com.dazzlecommeet"
+                  target="_blank"
+                >
                   <Image
                     src={googlePlayImage.src}
                     alt="Get it on Google Play"

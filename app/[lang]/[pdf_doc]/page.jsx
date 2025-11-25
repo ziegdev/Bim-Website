@@ -2,6 +2,12 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import { useDictionary } from '@/hooks/useDictionary';
+import { pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `/pdf.worker.js`;
+
 import dynamic from 'next/dynamic';
 const Document = dynamic(
   () => import('react-pdf').then((mod) => mod.Document),

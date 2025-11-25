@@ -23,7 +23,7 @@ type SocialIcon = {
 
 const socialIcons: SocialIcon[] = [
   {
-    href: 'https://www.facebook.com',
+    href: 'https://www.facebook.com/BimDating',
     src: facebookIcon.src,
     alt: 'Facebook',
     width: 9,
@@ -44,7 +44,7 @@ const socialIcons: SocialIcon[] = [
     height: 10,
   },
   {
-    href: 'https://www.twitter.com',
+    href: 'https://x.com/bimdating?s=21',
     src: twitterIcon.src,
     alt: 'x',
     width: 12,
