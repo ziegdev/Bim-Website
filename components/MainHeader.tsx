@@ -118,11 +118,11 @@ export function MainHeader({
         <Button
           className="rounded-lg bg-white text-[#4B0325] hover:bg-gray-50 lg:hidden"
           onClick={() => {
-            router.push(`/${lang}/pre-register`);
+            router.push(`/${lang}/social-medias`);
             closeMenu?.();
           }}
         >
-          {dict?.header.MainHeader.PreRegister}
+          {dict?.header.socialMedia}
         </Button>
       </div>
     </motion.div>

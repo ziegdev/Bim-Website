@@ -140,7 +140,7 @@ function YouTubeCarousel({
               <div className="flex flex-col">
                 <VideoEmbed video={video} />
                 {video.title && (
-                  <p className="mt-2 line-clamp-2 text-center text-sm text-gray-700">
+                  <p className="mt-2 line-clamp-2 hidden text-center text-sm text-gray-700 sm:block">
                     {video.title}
                   </p>
                 )}
@@ -150,11 +150,11 @@ function YouTubeCarousel({
         </CarouselContent>
       </Carousel>
 
-      {/* Custom Left Arrow */}
+      {/* Custom Left Arrow (desktop) */}
       <button
         onClick={() => api?.scrollPrev()}
         disabled={!canScrollPrev}
-        className={`absolute -left-4 top-1/2 z-10 -translate-y-1/2 md:-left-16 ${
+        className={`absolute -left-4 top-1/2 z-10 hidden -translate-y-1/2 md:-left-16 md:block ${
           !canScrollPrev
             ? 'cursor-not-allowed opacity-50'
             : 'cursor-pointer hover:opacity-80'
@@ -170,11 +170,11 @@ function YouTubeCarousel({
         />
       </button>
 
-      {/* Custom Right Arrow */}
+      {/* Custom Right Arrow (desktop) */}
       <button
         onClick={() => api?.scrollNext()}
         disabled={!canScrollNext}
-        className={`absolute -right-4 top-1/2 z-10 -translate-y-1/2 md:-right-16 ${
+        className={`absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 md:-right-16 md:block ${
           !canScrollNext
             ? 'cursor-not-allowed opacity-50'
             : 'cursor-pointer hover:opacity-80'
@@ -189,6 +189,44 @@ function YouTubeCarousel({
           className="h-10 w-10 md:h-12 md:w-12"
         />
       </button>
+
+      {/* Mobile bottom arrows (visible on small screens) */}
+      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-6 md:hidden">
+        <button
+          onClick={() => api?.scrollPrev()}
+          disabled={!canScrollPrev}
+          aria-label="Previous video"
+          className={`rounded-full bg-white/90 p-3 shadow ${
+            !canScrollPrev
+              ? 'cursor-not-allowed opacity-50'
+              : 'hover:opacity-80'
+          }`}
+        >
+          <Image
+            src={leftArrowIcon}
+            alt="Prev"
+            width={28}
+            height={28}
+          />
+        </button>
+        <button
+          onClick={() => api?.scrollNext()}
+          disabled={!canScrollNext}
+          aria-label="Next video"
+          className={`rounded-full bg-white/90 p-3 shadow ${
+            !canScrollNext
+              ? 'cursor-not-allowed opacity-50'
+              : 'hover:opacity-80'
+          }`}
+        >
+          <Image
+            src={rightArrowIcon}
+            alt="Next"
+            width={28}
+            height={28}
+          />
+        </button>
+      </div>
     </div>
   );
 }
