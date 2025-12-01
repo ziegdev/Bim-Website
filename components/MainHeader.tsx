@@ -116,7 +116,7 @@ export function MainHeader({
           </motion.div>
         ))}
         <Button
-          className="rounded-lg bg-white text-[#4B0325] hover:bg-gray-50 lg:hidden"
+          className="ml-5 rounded-lg bg-white text-[#4B0325] hover:bg-gray-50 lg:ml-0 lg:hidden"
           onClick={() => {
             router.push(`/${lang}/social-medias`);
             closeMenu?.();

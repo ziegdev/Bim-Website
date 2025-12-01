@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/carousel';
 import HeroSection from '@/components/HeroSection';
 import socialMediaHero from '@/public/images/social-media-hero.jpg';
+import socialMediaHeroMobile from '@/public/images/medias-mobile.jpg';
 import BackgroundButton from '@/components/BackgroundButton';
 import preRegisterBg from '@/public/images/pre-registration-bg.png';
 import preRegisterBgMobile from '@/public/images/pre-registration-bg-mobile.png';
@@ -287,7 +288,7 @@ function SocialMediaLinks() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
       whileHover={{ scale: 1.05 }}
-      className="group flex flex-col items-center gap-3"
+      className={`group flex w-[30%] flex-col items-center justify-center gap-3`}
     >
       <div
         className={`h-16 w-16 ${social.iconBg} flex items-center justify-center rounded-xl shadow-lg transition-shadow group-hover:shadow-xl`}
@@ -307,37 +308,44 @@ function SocialMediaLinks() {
   );
 
   return (
-    <div className="mx-auto mt-12 flex w-full max-w-4xl flex-col items-center gap-8">
-      {/* First Row: TikTok and Instagram */}
-      <div className="flex items-center justify-center gap-32 md:gap-40">
-        <SocialLinkItem
-          social={socialLinks.tiktok}
-          index={0}
-        />
-        <SocialLinkItem
-          social={socialLinks.instagram}
-          index={1}
-        />
-      </div>
+    <div className="mx-auto mt-12 w-full max-w-4xl">
+      {/* Use a 2-column grid so top and bottom items align vertically; YouTube centered across both columns */}
+      <div className="grid grid-cols-2 items-center gap-x-12 gap-y-8 px-4">
+        {/* Top row */}
+        <div className="flex justify-center">
+          <SocialLinkItem
+            social={socialLinks.tiktok}
+            index={0}
+          />
+        </div>
+        <div className="flex justify-center">
+          <SocialLinkItem
+            social={socialLinks.instagram}
+            index={1}
+          />
+        </div>
 
-      {/* Second Row: YouTube (centered) */}
-      <div className="flex items-center justify-center">
-        <SocialLinkItem
-          social={socialLinks.youtube}
-          index={2}
-        />
-      </div>
+        {/* Middle row: YouTube centered and spanning both columns */}
+        <div className="col-span-2 flex justify-center">
+          <SocialLinkItem
+            social={socialLinks.youtube}
+            index={2}
+          />
+        </div>
 
-      {/* Third Row: Facebook and Twitter */}
-      <div className="flex items-center justify-center gap-32 md:gap-40">
-        <SocialLinkItem
-          social={socialLinks.facebook}
-          index={3}
-        />
-        <SocialLinkItem
-          social={socialLinks.twitter}
-          index={4}
-        />
+        {/* Bottom row */}
+        <div className="flex justify-center">
+          <SocialLinkItem
+            social={socialLinks.facebook}
+            index={3}
+          />
+        </div>
+        <div className="flex justify-center">
+          <SocialLinkItem
+            social={socialLinks.twitter}
+            index={4}
+          />
+        </div>
       </div>
     </div>
   );
@@ -429,7 +437,7 @@ export default function SocialMediasPage() {
           'Follow us to check our new content and to stay tuned for our incoming offers!'
         }
         backgroundImage={socialMediaHero?.src}
-        backgroundImageMobile={socialMediaHero?.src}
+        backgroundImageMobile={socialMediaHeroMobile?.src}
       />
 
       {/* Main Content Area with Background */}
