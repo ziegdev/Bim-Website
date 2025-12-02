@@ -17,8 +17,8 @@ import BackgroundButton from '@/components/BackgroundButton';
 import preRegisterBg from '@/public/images/pre-registration-bg.png';
 import preRegisterBgMobile from '@/public/images/pre-registration-bg-mobile.png';
 import facebookIcon from '@/public/icons/fb.svg';
-import instagramIcon from '@/public/icons/insta.svg';
-import tiktokIcon from '@/public/icons/tiktok.svg';
+import instagramIcon from '@/public/icons/insta.png';
+import tiktokIcon from '@/public/icons/tiktok.png';
 import youtubeIcon from '@/public/icons/youtube.svg';
 import twitterIcon from '@/public/icons/x.svg';
 import leftArrowIcon from '@/public/images/left-arrow.png';
@@ -296,8 +296,8 @@ function SocialMediaLinks() {
         <Image
           src={social.icon.src}
           alt={social.name}
-          width={32}
-          height={32}
+          width={index == 0 ? 75 : index > 1 ? 32 : 64}
+          height={index == 0 ? 75 : index > 1 ? 32 : 64}
           className="object-contain"
         />
       </div>
