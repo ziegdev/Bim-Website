@@ -126,7 +126,10 @@ export function Footer() {
                 variant="Bim4Regular"
               >
                 {' '}
-                {dict.footer.privacy}
+                {dict.footer.privacy.replace(
+                  '{year}',
+                  new Date().getFullYear().toString(),
+                )}
               </Typography>
             </div>
 
