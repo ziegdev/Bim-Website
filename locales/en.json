@@ -1,4 +1,145 @@
 {
+  "crowdfunding": {
+    "seo": {
+      "title": "Support BIM Dating on Ulule | Video dating",
+      "description": "Discover BIM Dating, its video dating experience and its Ulule campaign: the project, the next steps and how the funding is intended to help.",
+      "imageAlt": "BIM Dating: a social network, dating and video conversations"
+    },
+    "hero": {
+      "title": "Help meaningful connections grow.",
+      "description": "BIM Dating brings social sharing and video dating together. Our crowdfunding campaign on Ulule will help us develop a more human, engaging and respectful way to meet.",
+      "cta": "Support BIM Dating on Ulule",
+      "note": "Get to know the project here, then choose whether to contribute on Ulule.",
+      "endLabel": "Campaign ends, Paris time:",
+      "learnMore": "Discover BIM Dating"
+    },
+    "intro": {
+      "title": "BIM Dating brings meeting to life.",
+      "description": "A photo and a few lines rarely tell a person’s whole story. BIM Dating makes room for voice, movement and spontaneity: share videos, discover other people’s content and get in touch.\n\nOur ambition is to bring people together through what they express and share. Whether you want to expand your circle or find a romantic connection, video offers a first step towards a real connection."
+    },
+    "difference": {
+      "title": "What makes BIM different.",
+      "items": [
+        {
+          "title": "A presence, beyond a picture",
+          "description": "Video gives personality, ways of speaking and interests more room. It offers context before a conversation begins."
+        },
+        {
+          "title": "Sharing before meeting",
+          "description": "BIM combines content discovery with connecting. You can become interested in someone through what they share, then choose to get to know them."
+        },
+        {
+          "title": "Respect at the heart of the project",
+          "description": "Inclusion, community moderation and reporting are part of our approach. The campaign aims to strengthen these tools and the support behind them."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Get to know each other at your own pace.",
+      "introduction": "A connection can begin with curiosity, continue with a conversation and gain a new dimension through video. This is the idea behind the BIM experience.",
+      "items": [
+        {
+          "title": "Discover",
+          "description": "Exploring shared videos gives you a first impression of a person, their interests and their world."
+        },
+        {
+          "title": "Get in touch",
+          "description": "When there is interest, making contact opens a conversation. Each person chooses whom they want to keep talking to."
+        },
+        {
+          "title": "Talk on video",
+          "description": "Voices, expressions and spontaneity bring a meeting to life. The aim is to build a connection that matters beyond the screen."
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Why are we asking for your support?",
+      "description": "BIM grew out of two friends’ experiences and a shared wish to bring sincere conversations back to online dating.\n\nThis campaign supports the next stage of the app’s development. Your support will help us improve the experience, strengthen moderation and introduce BIM to new communities. User feedback matters too: it helps shape the improvements we build."
+    },
+    "funding": {
+      "title": "What your support will help us do.",
+      "introduction": "The Ulule campaign sets out four development priorities. These are funding objectives, not a claim that every feature has already been delivered.",
+      "items": [
+        {
+          "title": "Develop the app",
+          "description": "Improve the user journey, make video interactions smoother and develop connection tools and inclusive options."
+        },
+        {
+          "title": "Strengthen moderation",
+          "description": "Support community moderation with professional expertise, more effective reporting and better prevention of inappropriate behaviour."
+        },
+        {
+          "title": "Reach new places",
+          "description": "Prepare to expand into other countries and work with local partners to take different cultures and habits into account."
+        },
+        {
+          "title": "Build the community",
+          "description": "Improve design and usability, and communicate about the project to bring more people together around BIM."
+        }
+      ]
+    },
+    "status": {
+      "title": "Where is BIM today?",
+      "description": "BIM already has an app presented on its website, with links to the App Store and Google Play. The campaign supports its continued development and evolution.",
+      "appStore": "Explore on the App Store",
+      "googlePlay": "Explore on Google Play",
+      "note": "The stores explain app availability and compatibility. For upcoming features, campaign announcements and contribution terms, check the information published on Ulule."
+    },
+    "trust": {
+      "title": "Get to know the people and the project.",
+      "items": [
+        {
+          "title": "A team behind BIM",
+          "description": "Two friends are building the project with the aim of making dating more authentic. Read about their approach on our website and in the campaign presentation."
+        },
+        {
+          "title": "Commitments to develop further",
+          "description": "Respect, inclusion and care for interactions guide BIM. Funding plans include stronger human support and tools for moderation."
+        },
+        {
+          "title": "A voluntary contribution",
+          "description": "You choose whether to visit Ulule and contribute there. This page takes no payments; offers and their terms are described on the platform."
+        }
+      ],
+      "about": "About BIM",
+      "legal": "Legal information and privacy",
+      "contact": "Contact the team"
+    },
+    "faq": {
+      "title": "Your questions, answered.",
+      "items": [
+        {
+          "question": "What is BIM Dating?",
+          "answer": "BIM is an app project combining a social network with video dating. Shared content helps you discover people, then choose to get in touch for a more direct conversation."
+        },
+        {
+          "question": "Why fund an app that already exists?",
+          "answer": "The campaign supports ongoing development: the user experience, video interactions, moderation, expansion into new countries and community growth."
+        },
+        {
+          "question": "How can I support the project?",
+          "answer": "Click “Support BIM Dating on Ulule” to visit the campaign. You can read the latest information, select a contribution and check its terms before making a commitment."
+        },
+        {
+          "question": "What rewards are available?",
+          "answer": "The offers, contribution amounts, availability and any conditions are listed on Ulule. Read the full description before contributing; this page promises no financial benefit."
+        },
+        {
+          "question": "Can I explore BIM without contributing?",
+          "answer": "Yes. You can browse our website, follow the app links and contact the team without contributing to the campaign. Sharing the project and sending us feedback are other ways to help."
+        },
+        {
+          "question": "Where can I find campaign updates?",
+          "answer": "The Ulule page is the reference for fundraising information, offer terms and updates published by the team. Our contact page remains available for questions about BIM."
+        }
+      ]
+    },
+    "final": {
+      "title": "Help write BIM’s next chapter.",
+      "description": "Take time to explore our vision, then visit the campaign on Ulule to choose how you would like to take part.",
+      "note": "Contributions take place on Ulule. Read the information and terms of your chosen offer before participating."
+    }
+  },
   "home": {
     "findSomething": "FIND SOMETHING",
     "perfect": "PERFECT",

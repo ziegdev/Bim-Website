@@ -1,4 +1,5 @@
 export interface Dictionary {
+  crowdfunding: CrowdfundingDictionary;
   home: {
     findSomething: string;
     perfect: string;
@@ -223,4 +224,61 @@ export interface Dictionary {
     acceptAll: string;
     rejectAll: string;
   };
+}
+
+export interface CrowdfundingDictionary {
+  seo: {
+    title: string;
+    description: string;
+    imageAlt: string;
+  };
+  hero: {
+    title: string;
+    description: string;
+    cta: string;
+    note: string;
+    endLabel: string;
+    learnMore: string;
+  };
+  intro: { title: string; description: string };
+  difference: { title: string; items: CrowdfundingItem[] };
+  experience: {
+    title: string;
+    introduction: string;
+    items: CrowdfundingItem[];
+  };
+  campaign: { title: string; description: string };
+  funding: {
+    title: string;
+    introduction: string;
+    items: CrowdfundingItem[];
+  };
+  status: {
+    title: string;
+    description: string;
+    appStore: string;
+    googlePlay: string;
+    note: string;
+  };
+  trust: {
+    title: string;
+    items: CrowdfundingItem[];
+    about: string;
+    legal: string;
+    contact: string;
+  };
+  faq: {
+    title: string;
+    items: { question: string; answer: string }[];
+  };
+  final: {
+    title: string;
+    description: string;
+    note: string;
+  };
+}
+
+interface CrowdfundingItem {
+  title: string;
+  description: string;
 }

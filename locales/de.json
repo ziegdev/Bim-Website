@@ -1,4 +1,145 @@
 {
+  "crowdfunding": {
+    "seo": {
+      "title": "BIM Dating auf Ulule unterstützen | Video-Dating",
+      "description": "Entdecke BIM Dating, Begegnungen per Video und die Ulule-Kampagne: das Projekt, die nächsten Schritte und die geplante Verwendung der Finanzierung.",
+      "imageAlt": "BIM Dating: soziales Netzwerk, Begegnungen und Videogespräche"
+    },
+    "hero": {
+      "title": "Lassen wir echte Verbindungen wachsen.",
+      "description": "BIM Dating verbindet ein soziales Netzwerk mit Begegnungen per Video. Mit unserer Crowdfunding-Kampagne auf Ulule möchten wir eine persönlichere, lebendigere und respektvollere Erfahrung weiterentwickeln.",
+      "cta": "BIM Dating auf Ulule unterstützen",
+      "note": "Lerne das Projekt hier kennen und entscheide dann selbst, ob du auf Ulule beitragen möchtest.",
+      "endLabel": "Kampagnenende, Pariser Zeit:",
+      "learnMore": "BIM Dating entdecken"
+    },
+    "intro": {
+      "title": "BIM Dating macht Begegnungen lebendig.",
+      "description": "Ein Foto und ein paar Zeilen erzählen selten die ganze Geschichte eines Menschen. BIM Dating schafft Raum für Stimme, Bewegung und Spontaneität: Teile Videos, entdecke die Beiträge anderer und knüpfe Kontakte.\n\nWir möchten Menschen durch das verbinden, was sie ausdrücken und teilen. Ob neue Freundschaften oder eine romantische Begegnung: Video kann der erste Schritt zu einer echten Verbindung sein."
+    },
+    "difference": {
+      "title": "Was BIM anders macht.",
+      "items": [
+        {
+          "title": "Mehr als ein Foto",
+          "description": "Videos geben der Persönlichkeit, der Stimme und den Interessen mehr Raum. So entsteht ein erster Eindruck, bevor ein Gespräch beginnt."
+        },
+        {
+          "title": "Teilen und kennenlernen",
+          "description": "BIM verbindet das Entdecken von Inhalten mit neuen Kontakten. Was jemand teilt, kann neugierig machen und zum Kennenlernen einladen."
+        },
+        {
+          "title": "Respekt als Grundlage",
+          "description": "Inklusion, gemeinschaftliche Moderation und Meldefunktionen gehören zu unserem Ansatz. Die Kampagne soll diese Werkzeuge und ihre Betreuung stärken."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Kennenlernen im eigenen Tempo.",
+      "introduction": "Eine Verbindung kann mit Neugier beginnen, sich im Gespräch entwickeln und per Video eine neue Dimension gewinnen. Das ist die Idee hinter dem BIM-Erlebnis.",
+      "items": [
+        {
+          "title": "Entdecken",
+          "description": "Geteilte Videos vermitteln einen ersten Eindruck von einem Menschen, seinen Interessen und seiner Welt."
+        },
+        {
+          "title": "Kontakt aufnehmen",
+          "description": "Wenn Interesse entsteht, kann eine Kontaktaufnahme das Gespräch eröffnen. Jede Person entscheidet, mit wem sie den Austausch fortsetzen möchte."
+        },
+        {
+          "title": "Per Video austauschen",
+          "description": "Stimme, Mimik und Spontaneität machen Begegnungen lebendig. Das Ziel ist eine Verbindung, die auch jenseits des Bildschirms Bedeutung hat."
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Warum bitten wir um Unterstützung?",
+      "description": "BIM entstand aus den Erfahrungen zweier Freunde und dem gemeinsamen Wunsch nach aufrichtigen Gesprächen beim digitalen Kennenlernen.\n\nDiese Kampagne begleitet die Weiterentwicklung der App. Deine Unterstützung soll helfen, den Ablauf zu verbessern, die Moderation zu stärken und BIM neuen Gemeinschaften vorzustellen. Auch Rückmeldungen der Nutzerinnen und Nutzer helfen uns, die nächsten Verbesserungen zu gestalten."
+    },
+    "funding": {
+      "title": "Was deine Unterstützung ermöglichen soll.",
+      "introduction": "Die Ulule-Kampagne beschreibt vier Entwicklungsschwerpunkte. Es handelt sich um Finanzierungsziele, nicht um die Zusage, dass alle Funktionen bereits verfügbar sind.",
+      "items": [
+        {
+          "title": "Die App weiterentwickeln",
+          "description": "Den Nutzungsablauf verbessern, Videointeraktionen flüssiger gestalten und Kontaktfunktionen sowie inklusive Optionen ausbauen."
+        },
+        {
+          "title": "Die Moderation stärken",
+          "description": "Die gemeinschaftliche Moderation durch professionelle Unterstützung, wirksamere Meldungen und eine bessere Vorbeugung unangemessenen Verhaltens ergänzen."
+        },
+        {
+          "title": "Neue Länder erreichen",
+          "description": "Die Einführung in weiteren Ländern vorbereiten und mit lokalen Partnern unterschiedliche Kulturen und Gewohnheiten berücksichtigen."
+        },
+        {
+          "title": "Die Gemeinschaft aufbauen",
+          "description": "Design und Bedienung verbessern und mit Kommunikation mehr Menschen für das Projekt zusammenbringen."
+        }
+      ]
+    },
+    "status": {
+      "title": "Wo steht BIM heute?",
+      "description": "BIM stellt auf seiner Website bereits eine App mit Links zum App Store und zu Google Play vor. Die Kampagne unterstützt ihre weitere Entwicklung.",
+      "appStore": "Im App Store entdecken",
+      "googlePlay": "Bei Google Play entdecken",
+      "note": "Die Stores informieren über Verfügbarkeit und Kompatibilität. Angaben zu kommenden Funktionen, Neuigkeiten und Beitragsbedingungen findest du auf Ulule."
+    },
+    "trust": {
+      "title": "Lerne das Projekt und das Team kennen.",
+      "items": [
+        {
+          "title": "Ein Team hinter BIM",
+          "description": "Zwei Freunde tragen das Projekt mit dem Ziel, Begegnungen authentischer zu machen. Mehr über ihren Ansatz findest du auf unserer Website und in der Kampagnenvorstellung."
+        },
+        {
+          "title": "Engagement weiterentwickeln",
+          "description": "Respekt, Inklusion und ein achtsamer Austausch leiten BIM. Geplant sind insbesondere mehr personelle Unterstützung und bessere Moderationswerkzeuge."
+        },
+        {
+          "title": "Freiwillig unterstützen",
+          "description": "Du entscheidest, ob du Ulule besuchen und dort beitragen möchtest. Diese Seite nimmt keine Zahlungen an; Angebote und Bedingungen stehen auf der Plattform."
+        }
+      ],
+      "about": "Über BIM",
+      "legal": "Rechtliche Hinweise und Datenschutz",
+      "contact": "Das Team kontaktieren"
+    },
+    "faq": {
+      "title": "Antworten auf deine Fragen.",
+      "items": [
+        {
+          "question": "Was ist BIM Dating?",
+          "answer": "BIM ist ein App-Projekt, das ein soziales Netzwerk mit Video-Dating verbindet. Geteilte Inhalte helfen dabei, Menschen zu entdecken und sich für einen direkteren Austausch zu entscheiden."
+        },
+        {
+          "question": "Warum eine bestehende App finanzieren?",
+          "answer": "Die Kampagne unterstützt die weitere Entwicklung: Nutzungserlebnis, Videointeraktionen, Moderation, neue Länder und den Aufbau der Gemeinschaft."
+        },
+        {
+          "question": "Wie kann ich das Projekt unterstützen?",
+          "answer": "Klicke auf „BIM Dating auf Ulule unterstützen“. Dort kannst du aktuelle Informationen lesen, einen Beitrag auswählen und vor deiner Entscheidung die Bedingungen prüfen."
+        },
+        {
+          "question": "Welche Gegenleistungen gibt es?",
+          "answer": "Angebote, Beträge, Verfügbarkeit und mögliche Bedingungen werden auf Ulule beschrieben. Lies die vollständigen Angaben, bevor du beiträgst. Diese Seite verspricht keinen finanziellen Vorteil."
+        },
+        {
+          "question": "Kann ich BIM ohne Beitrag kennenlernen?",
+          "answer": "Ja. Du kannst unsere Website besuchen, den App-Links folgen und das Team kontaktieren, ohne zur Kampagne beizutragen. Auch das Teilen des Projekts und dein Feedback helfen uns."
+        },
+        {
+          "question": "Wo finde ich Neuigkeiten zur Kampagne?",
+          "answer": "Auf Ulule findest du Informationen zur Sammlung, die Angebotsbedingungen und die vom Team veröffentlichten Neuigkeiten. Für Fragen zu BIM steht unsere Kontaktseite zur Verfügung."
+        }
+      ]
+    },
+    "final": {
+      "title": "Gestalte das nächste Kapitel von BIM mit.",
+      "description": "Entdecke unsere Vision in Ruhe und besuche dann die Kampagne auf Ulule, um deine Form der Unterstützung zu wählen.",
+      "note": "Beiträge werden auf Ulule geleistet. Lies vor der Teilnahme die Informationen und Bedingungen des ausgewählten Angebots."
+    }
+  },
   "home": {
     "findSomething": "FINDE ETWAS",
     "perfect": "PERFEKT",

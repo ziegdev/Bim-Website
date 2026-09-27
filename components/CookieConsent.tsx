@@ -10,7 +10,7 @@ export const CookieConsentDialog = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [consentChoices, setConsentChoices] = useState({
     necessary: false,
-    analytics: false, 
+    analytics: false,
     thirdParty: false,
   });
   const params = useParams();
@@ -89,7 +89,7 @@ export const CookieConsentDialog = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="w-11/12 max-w-lg rounded-lg bg-gray-800 p-6 text-white">
+      <div className="max-h-[90dvh] w-11/12 max-w-lg overflow-y-auto rounded-lg bg-gray-800 p-6 text-white">
         <Typography
           variant="Bim1"
           className="mb-4 text-center text-xl"
@@ -149,7 +149,7 @@ export const CookieConsentDialog = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between gap-4">
+        <div className="flex flex-col justify-between gap-4 sm:flex-row">
           <button
             onClick={handleRejectAll}
             className="flex-1 rounded bg-gray-600 px-4 py-2 text-white hover:bg-gray-700"

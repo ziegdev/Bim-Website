@@ -46,7 +46,12 @@ export function LanguageSwitcher() {
       `/${currentLang}`,
       `/${value}`,
     );
-    router.push(newPathname);
+    // Preserve attribution and anchors without adding a Suspense requirement.
+    router.push(
+      newPathname +
+        window.location.search +
+        window.location.hash,
+    );
   };
 
   useEffect(() => {

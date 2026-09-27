@@ -106,7 +106,7 @@ export function Footer() {
       >
         <div className="container mx-auto p-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-12">
-            <div className="order-2 col-span-7 flex justify-center gap-4 md:order-1 md:justify-start">
+            <div className="order-2 flex flex-wrap justify-center gap-4 md:order-1 md:col-span-7 md:justify-start">
               <Typography
                 className="whitespace-nowrap text-start text-sm text-white sm:text-lg md:text-start"
                 variant="Bim4Regular"
@@ -130,7 +130,7 @@ export function Footer() {
               </Typography>
             </div>
 
-            <div className="order-1 col-span-5 flex items-center justify-center gap-2 md:order-2 md:justify-end">
+            <div className="order-1 flex flex-wrap items-center justify-center gap-2 md:order-2 md:col-span-5 md:justify-end">
               <Typography
                 className="me-4 text-start text-sm text-white sm:text-lg md:text-start"
                 variant="Bim4Regular"

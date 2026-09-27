@@ -8,9 +8,10 @@ import React, {
 } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import { Typography } from './Typography';
 import CustomButton from './CustomButton';
 import { Prose } from './Prose';
+import { typographyVariants } from './TypographyConfig';
+import { cn } from '@/lib/utils';
 
 interface ContentSectionProps {
   title: string;
@@ -19,7 +20,7 @@ interface ContentSectionProps {
   image: string;
   backgroundImage?: string;
   backgroundImageMobile?: string;
-  button: {
+  button?: {
     text: string;
     textColor: string;
     backgroundColor: string;
@@ -30,6 +31,9 @@ interface ContentSectionProps {
   onButtonClick?: (id: string) => void;
   idPassedToButton?: string;
   children?: React.ReactNode;
+  titleAs?: 'p' | 'h2';
+  truncateDescription?: boolean;
+  animate?: boolean;
 }
 
 const ContentSection = forwardRef<
@@ -49,6 +53,9 @@ const ContentSection = forwardRef<
       idPassedToButton,
       children,
       reverse = false,
+      titleAs: Title = 'p',
+      truncateDescription = true,
+      animate = true,
     },
     ref,
   ) => {
@@ -116,8 +123,10 @@ const ContentSection = forwardRef<
         <motion.div
           ref={sectionRef}
           variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'}
+          initial={animate ? 'hidden' : false}
+          animate={
+            !animate || isInView ? 'visible' : 'hidden'
+          }
           className="container relative z-10 mx-auto px-4 py-16 sm:py-24"
         >
           <div
@@ -131,6 +140,7 @@ const ContentSection = forwardRef<
                 <img
                   src={image}
                   alt={title}
+                  loading="lazy"
                   className="h-auto w-full"
                 />
               </motion.div>
@@ -140,13 +150,27 @@ const ContentSection = forwardRef<
               variants={itemVariants}
               className="order-2 flex-1 space-y-12 sm:order-1"
             >
-              <Typography
-                variant="Bim1"
-                className="mb-4 mt-12 text-center text-3xl text-[#4b0325] sm:mt-0 sm:text-start sm:text-4xl"
+              <Title
+                className={cn(
+                  typographyVariants({
+                    variant: 'Bim1',
+                    className:
+                      'mb-4 mt-12 text-center text-3xl leading-tight text-[#4b0325] sm:mt-0 sm:text-start sm:text-4xl',
+                  }),
+                )}
               >
                 {title}
-              </Typography>
-              <Prose short>{description}</Prose>
+              </Title>
+              <Prose
+                short={truncateDescription}
+                className={
+                  truncateDescription
+                    ? undefined
+                    : 'max-w-none p-0'
+                }
+              >
+                {description}
+              </Prose>
               <div className="flex justify-start">
                 {button && idPassedToButton && (
                   <CustomButton

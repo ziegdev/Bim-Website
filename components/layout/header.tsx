@@ -83,7 +83,7 @@ export function Header() {
                   loading="lazy"
                 />
               </motion.div>
-              <span className="min-w-48 text-xs text-white sm:text-base">
+              <span className="hidden text-xs text-white min-[400px]:inline sm:text-base">
                 The Dating Social Media
               </span>
             </button>

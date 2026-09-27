@@ -1,12 +1,13 @@
 import { NextMiddleware } from 'next/server';
 import { stackMiddlewares } from './middlewares';
 import { withLocale } from './middlewares/with-locale';
+import { withCrowdfunding } from './middlewares/with-crowdfunding';
 
 export type MiddlewareFactory = (
   middleware: NextMiddleware,
 ) => NextMiddleware;
 
-const middlewares = [withLocale];
+const middlewares = [withLocale, withCrowdfunding];
 
 export default stackMiddlewares(middlewares);
 

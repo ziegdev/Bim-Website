@@ -1,4 +1,145 @@
 {
+  "crowdfunding": {
+    "seo": {
+      "title": "Ënnerstëtz BIM Dating op Ulule | Video-Dating",
+      "description": "Entdeck BIM Dating, d’Begéinungen iwwer Video an d’Ulule-Campagne: de Projet, déi nächst Schrëtt an déi geplangte Notzung vun der Finanzéierung.",
+      "imageAlt": "BIM Dating: e soziaalt Netzwierk, Begéinungen a Gespréicher iwwer Video"
+    },
+    "hero": {
+      "title": "Loosse mir richteg Verbindunge wuessen.",
+      "description": "BIM Dating verbënnt d’Deele vun engem soziale Netzwierk mat Begéinungen iwwer Video. Mat eiser Crowdfunding-Campagne op Ulule wëlle mir eng méi mënschlech, lieweg a respektvoll Erfarung weiderentwéckelen.",
+      "cta": "BIM Dating op Ulule ënnerstëtzen",
+      "note": "Léier de Projet hei kennen an entscheed duerno selwer, ob s du op Ulule bäidroe wëlls.",
+      "endLabel": "Enn vun der Campagne, Paräisser Zäit:",
+      "learnMore": "BIM Dating entdecken"
+    },
+    "intro": {
+      "title": "Mat BIM Dating gi Begéinunge lieweg.",
+      "description": "Eng Foto an e puer Zeilen erzielen net déi ganz Geschicht vun engem Mënsch. BIM Dating gëtt der Stëmm, der Beweegung an der Spontanitéit Plaz: Deel Videoen, entdeck déi vun aneren a knëpp Kontakter.\n\nMir wëlle Mënschen duerch dat verbannen, wat si ausdrécken an deelen. Fir nei Frëndschaften oder eng romantesch Begéinung kann de Video en éischte Schrëtt zu enger richteger Verbindung sinn."
+    },
+    "difference": {
+      "title": "Wat BIM anescht mécht.",
+      "items": [
+        {
+          "title": "Eng Präsenz, méi wéi eng Foto",
+          "description": "Videoe loossen der Perséinlechkeet, der Aart ze schwätzen an den Interessen méi Plaz. Si ginn en éischten Androck, éier e Gespréich ufänkt."
+        },
+        {
+          "title": "Deelen a sech kenneléieren",
+          "description": "BIM verbënnt d’Entdecke vu Contenu mat neie Kontakter. Dat, wat eng Persoun deelt, kann dech virwëtzeg maachen an zum Kenneléiere motivéieren."
+        },
+        {
+          "title": "Respekt als Grondlag",
+          "description": "Inklusioun, Moderatioun duerch d’Communautéit a Meldeméiglechkeete gehéieren zu eiser Approche. D’Campagne soll dës Instrumenter an hir Betreiung stäerken."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Sech am eegenen Tempo kenneléieren.",
+      "introduction": "Eng Verbindung ka mat Virwëtz ufänken, sech am Gespréich entwéckelen an iwwer Video eng nei Dimensioun kréien. Dat ass d’Iddi hannert der BIM-Erfarung.",
+      "items": [
+        {
+          "title": "Entdecken",
+          "description": "Gedeelte Videoe ginn en éischten Androck vun enger Persoun, hiren Interessen an hirer Welt."
+        },
+        {
+          "title": "Kontakt ophuelen",
+          "description": "Wann Interessi do ass, kann eng Kontaktopnam e Gespréich opmaachen. Jidderee wielt, mat wiem en den Austausch weiderféiere wëll."
+        },
+        {
+          "title": "Iwwer Video schwätzen",
+          "description": "D’Stëmm, d’Gesiichtsausdréck an d’Spontanitéit maachen d’Begéinung lieweg. D’Zil ass eng Verbindung, déi och iwwer de Bildschierm eraus Sënn mécht."
+        }
+      ]
+    },
+    "campaign": {
+      "title": "Firwat froe mir no denger Ënnerstëtzung?",
+      "description": "BIM ass aus den Erfarunge vun zwee Frënn an engem gemeinsame Wonsch entstanen: éierlech Gespréicher beim digitale Kenneléiere nees an de Mëttelpunkt ze stellen.\n\nDës Campagne begleet déi nächst Entwécklungsschrëtt vun der App. Deng Ënnerstëtzung soll hëllefen, d’Erfarung ze verbesseren, d’Moderatioun ze stäerken an BIM bei neie Communautéite bekannt ze maachen. Och de Feedback vun de Leit, déi d’App benotzen, hëlleft eis bei de nächste Verbesserungen."
+    },
+    "funding": {
+      "title": "Wat deng Ënnerstëtzung erméigleche soll.",
+      "introduction": "D’Ulule-Campagne stellt véier Entwécklungsprioritéite vir. Dat si Finanzéierungsziler, net Funktiounen, déi schonn all disponibel sinn.",
+      "items": [
+        {
+          "title": "D’App weiderentwéckelen",
+          "description": "D’Benotzung verbesseren, Video-Interaktioune méi flësseg maachen a Kontaktméiglechkeeten an inklusiv Optiounen ausbauen."
+        },
+        {
+          "title": "D’Moderatioun stäerken",
+          "description": "D’Moderatioun duerch d’Communautéit mat professioneller Betreiung, méi effikasse Meldungen an enger besserer Preventioun vun onpassendem Verhalen ergänzen."
+        },
+        {
+          "title": "Nei Länner erreechen",
+          "description": "D’Aféierung an anere Länner virbereeden a mat lokale Partner verschidde Kulturen a Gewunnechte berücksichtegen."
+        },
+        {
+          "title": "D’Communautéit opbauen",
+          "description": "Den Design an d’Benotzerfrëndlechkeet verbesseren an duerch Kommunikatioun méi Leit ronderëm de Projet zesummebréngen."
+        }
+      ]
+    },
+    "status": {
+      "title": "Wou steet BIM haut?",
+      "description": "BIM stellt schonn eng App op sengem Site vir, mat Linken op den App Store a Google Play. D’Campagne ënnerstëtzt hir weider Entwécklung.",
+      "appStore": "Am App Store entdecken",
+      "googlePlay": "Op Google Play entdecken",
+      "note": "D’Stores ginn Informatiounen iwwer Disponibilitéit a Kompatibilitéit. Informatiounen iwwer nei Funktiounen, d’Campagne an d’Konditioune vun de Bäiträg fënns du op Ulule."
+    },
+    "trust": {
+      "title": "Léier de Projet an d’Equipe kennen.",
+      "items": [
+        {
+          "title": "Eng Equipe hannert BIM",
+          "description": "Zwee Frënn droen de Projet mam Zil, Begéinunge méi authentesch ze maachen. Méi iwwer hir Approche fënns du op eisem Site an an der Campagne."
+        },
+        {
+          "title": "Engagementer weiderentwéckelen",
+          "description": "Respekt, Inklusioun an en oppassenen Ëmgang mateneen leede BIM. Geplangt si méi mënschlech Ënnerstëtzung a besser Instrumenter fir d’Moderatioun."
+        },
+        {
+          "title": "E fräiwëllege Bäitrag",
+          "description": "Du entscheeds, ob s du Ulule besiche wëlls an do bäidréis. Dës Säit hëlt keng Bezuelungen un; d’Offeren an hir Konditioune stinn op der Plattform."
+        }
+      ],
+      "about": "Iwwer BIM",
+      "legal": "Rechtlech Informatiounen an Dateschutz",
+      "contact": "D’Equipe kontaktéieren"
+    },
+    "faq": {
+      "title": "Äntwerten op deng Froen.",
+      "items": [
+        {
+          "question": "Wat ass BIM Dating?",
+          "answer": "BIM ass en App-Projet, deen e soziaalt Netzwierk mat Video-Dating verbënnt. Gedeelte Contenu hëlleft dir, Mënschen ze entdecken an ze wielen, ob s du e méi direkt Gespréich ufänke wëlls."
+        },
+        {
+          "question": "Firwat eng App finanzéieren, déi schonn existéiert?",
+          "answer": "D’Campagne ënnerstëtzt d’Weiderentwécklung: d’Benotzererfarung, Video-Interaktiounen, d’Moderatioun, nei Länner an de Wuesstem vun der Communautéit."
+        },
+        {
+          "question": "Wéi kann ech de Projet ënnerstëtzen?",
+          "answer": "Klick op «BIM Dating op Ulule ënnerstëtzen», fir d’Campagne ze besichen. Do kanns du aktuell Informatioune liesen, e Bäitrag auswielen an d’Konditioune virun denger Entscheedung nokucken."
+        },
+        {
+          "question": "Wéi eng Géigeleeschtunge ginn et?",
+          "answer": "D’Offeren, d’Beträg, d’Disponibilitéit an eventuell Konditioune ginn op Ulule beschriwwen. Lies déi ganz Beschreiwung, éier s du bäidréis. Dës Säit versprécht kee finanzielle Virdeel."
+        },
+        {
+          "question": "Kann ech BIM ouni Bäitrag entdecken?",
+          "answer": "Jo. Du kanns eise Site besichen, de Linken op d’App nogoen an d’Equipe kontaktéieren, ouni bei der Campagne matzemaachen. Och de Projet deelen an eis Feedback schécken hëlleft."
+        },
+        {
+          "question": "Wou fannen ech Neiegkeeten zur Campagne?",
+          "answer": "D’Ulule-Säit ass d’Referenz fir Informatiounen iwwer d’Sammlung, d’Konditioune vun den Offeren an d’Neiegkeete vun der Equipe. Fir Froen iwwer BIM bleift eis Kontaktsäit disponibel."
+        }
+      ]
+    },
+    "final": {
+      "title": "Schreif dat nächst Kapitel vu BIM mat.",
+      "description": "Huel dir Zäit, fir eis Visioun ze entdecken, a besich duerno d’Campagne op Ulule, fir ze wielen, wéi s du matmaache wëlls.",
+      "note": "Bäiträg ginn op Ulule gemaach. Lies virum Matmaachen d’Informatiounen an d’Konditioune vun der gewielter Offer."
+    }
+  },
   "home": {
     "findSomething": "FANN EPPES",
     "perfect": "PERFEKT",
