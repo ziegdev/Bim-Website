@@ -184,6 +184,7 @@ export interface Dictionary {
       About: string;
       News: string;
       Contact: string;
+      Ulule: string;
       PreRegister: string;
     };
   };

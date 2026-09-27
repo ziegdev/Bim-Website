@@ -11,6 +11,8 @@ import { Button } from './ui/button';
 import { Typography } from './Typography';
 import { useDictionary } from '@/hooks/useDictionary';
 import { Languages } from '@/lib/types/languages';
+import { useCrowdfundingActive } from '@/hooks/useCrowdfundingActive';
+import { isCrowdfundingActive } from '@/lib/crowdfunding';
 
 interface MainHeaderProps
   extends React.HTMLAttributes<HTMLDivElement> {
@@ -28,6 +30,8 @@ export function MainHeader({
   const params = useParams();
   // const lang = params.lang as Languages;
   const dict = useDictionary(lang);
+  const showCrowdfunding = useCrowdfundingActive();
+  const crowdfundingHref = `/${lang}/crowdfunding`;
 
   const routes = [
     {
@@ -51,6 +55,15 @@ export function MainHeader({
       label: dict?.header.MainHeader.Contact,
       active: pathname === `/${lang}/contact`,
     },
+    ...(showCrowdfunding
+      ? [
+          {
+            href: crowdfundingHref,
+            label: dict?.header.MainHeader.Ulule,
+            active: pathname === crowdfundingHref,
+          },
+        ]
+      : []),
   ];
 
   const router = useRouter();
@@ -90,7 +103,13 @@ export function MainHeader({
           >
             <Button
               onClick={() => {
-                router.push(route.href);
+                // Recheck at click time in case a background tab's timer was paused.
+                router.push(
+                  route.href === crowdfundingHref &&
+                    !isCrowdfundingActive()
+                    ? `/${lang}`
+                    : route.href,
+                );
                 closeMenu?.();
               }}
               variant={'link'}

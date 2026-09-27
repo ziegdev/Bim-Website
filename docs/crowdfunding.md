@@ -7,9 +7,12 @@ as **16 November 2026 at 23:59 Europe/Paris**, stored as
 `2026-11-16T22:59:00Z`. The public Ulule API returned `22:59:19Z`; the owner's
 explicit minute-level instruction takes precedence.
 
-The page is available at `/{en,fr,de,es,it,lb}/crowdfunding`. No temporary link is
-added to the global navigation. Existing header, footer and locale menu are
-inherited from the site layout.
+The page is available at `/{en,fr,de,es,it,lb}/crowdfunding`. The shared desktop
+and mobile navigation includes a temporary, dictionary-backed "Ulule" item
+pointing to the current language's landing page. Its client-side visibility uses
+the same campaign deadline, rechecks on timers and tab restoration, and removes
+the item at expiry. A click-time check also sends late clicks to the homepage.
+Existing header, footer and locale menu are inherited from the site layout.
 
 At and after the deadline, middleware sends a **307** to the same language's
 homepage, retaining the query string and setting `Cache-Control: no-store`.
@@ -52,6 +55,7 @@ With project dependencies installed:
 
 ```sh
 node --test tests/crowdfunding.test.cjs
+node --test tests/crowdfunding-navigation.test.cjs
 npm run build
 node --test tests/routing.production.test.cjs
 npx tsc --noEmit --incremental false
