@@ -53,6 +53,7 @@ With project dependencies installed:
 ```sh
 node --test tests/crowdfunding.test.cjs
 npm run build
+node --test tests/routing.production.test.cjs
 npx tsc --noEmit --incremental false
 ```
 
@@ -60,6 +61,16 @@ The tests cover the UTC/Paris deadline, the exact expiration boundary, all six
 middleware redirects while the same process stays running, attribution retention,
 and completeness of all six dictionaries. Check the served HTML for localized
 metadata, a single H1, all three Ulule anchors and full content before hydration.
+
+The production routing regression suite starts and stops its own `next start`
+server using the existing `.next` build. Its 19 tests verify route precedence,
+all six crowdfunding responses (or the intended homepage redirect after expiry),
+all 30 localized PDF documents and their files, and HTTP 404 responses for four
+invalid slugs in every language. The PDF route now validates its five supported
+slugs on the server and uses `dynamicParams = false`; there is no default PDF.
+The middleware chain and Next.js rewrites do not rewrite crowdfunding to a PDF.
+These checks passed locally in production mode; they do not verify which commit
+or build is served by a particular Vercel Preview URL.
 
 Before production approval, visually review widths 320/375, 768 and 1440 px,
 including the cookie dialog and the longer German/Luxembourgish labels. The CTA
